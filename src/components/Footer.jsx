@@ -40,11 +40,12 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-2.5 font-extrabold text-[1.05rem] mb-4">
-              <div className="w-[34px] h-[34px] rounded-[10px] bg-[#0d98cd] flex items-center justify-content-center justify-center text-white text-[0.78rem] font-extrabold shrink-0">
-                NS
-              </div>
-              NextStep ISO
+            <Link to="/" className="inline-flex mb-4" aria-label="NextStep ISO — Home">
+              <img
+                src="/NextSteo ISO Logo removebg v2.png"
+                alt="NextStep ISO"
+                className="h-[60px] w-auto object-contain brightness-0 invert"
+              />
             </Link>
             <p className="text-[0.875rem] text-gray-400 leading-relaxed mb-5">
               Australia's trusted ISO consultancy. Expert-led certification — fast, affordable, and guaranteed.

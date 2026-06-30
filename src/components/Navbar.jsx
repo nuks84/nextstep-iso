@@ -52,11 +52,12 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-[68px]">
 
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2.5 font-extrabold text-[1.1rem] tracking-tight text-gray-900">
-            <div className="w-[34px] h-[34px] rounded-[10px] bg-[#0d98cd] flex items-center justify-center text-white text-[0.78rem] font-extrabold shrink-0">
-              NS
-            </div>
-            NextStep <span className="text-[#0d98cd]">ISO</span>
+          <Link to="/" className="flex items-center" aria-label="NextStep ISO — Home">
+            <img
+              src="/NextSteo ISO Logo removebg v2.png"
+              alt="NextStep ISO"
+              className="h-[50px] w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop nav */}
@@ -147,7 +148,7 @@ export default function Navbar() {
                 {s.label}
               </Link>
             ))}
-            <div className="h-px bg-gray-100 my-1" />
+            <div className="h-px bg-white/10 my-1" />
             {navLinks.map(l => (
               <Link
                 key={l.href}
