@@ -30,9 +30,9 @@ function ContactInfo() {
 
       <div className="flex flex-col gap-5 mb-8">
         {[
-          { Icon: Phone, label: 'Phone',    val: '1300 XXX XXX',             href: 'tel:+611300000000' },
+          { Icon: Phone, label: 'Phone',    val: '0494 718 985',              href: 'tel:+61494718985' },
           { Icon: Mail,  label: 'Email',    val: 'hello@nextstepiso.com.au',  href: 'mailto:hello@nextstepiso.com.au' },
-          { Icon: MapPin,label: 'Location', val: 'Sydney, NSW — serving all of Australia', href: null },
+          { Icon: MapPin,label: 'Location', val: 'Melbourne, VIC — Australia-wide', href: null },
           { Icon: Clock, label: 'Hours',    val: 'Mon–Fri, 8:30am–5:30pm AEST', href: null },
         ].map(({ Icon, label, val, href }) => (
           <div key={label} className="flex items-start gap-3.5">

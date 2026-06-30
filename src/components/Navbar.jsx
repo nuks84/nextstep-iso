@@ -108,10 +108,10 @@ export default function Navbar() {
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="tel:+611300000000"
+              href="tel:+61494718985"
               className="text-[0.87rem] font-semibold text-gray-600 hover:text-gray-900 transition-colors"
             >
-              1300 XXX XXX
+              0494 718 985
             </a>
             <Link
               to="/contact"

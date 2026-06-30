@@ -8,14 +8,11 @@ const LinkedinIcon = () => (
     <circle cx="4" cy="4" r="2"/>
   </svg>
 )
-const XIcon = () => (
-  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-  </svg>
-)
-const FacebookIcon = () => (
-  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+const InstagramIcon = () => (
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+    <circle cx="12" cy="12" r="4"/>
+    <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
   </svg>
 )
 
@@ -52,9 +49,8 @@ export default function Footer() {
             </p>
             <div className="flex gap-2.5">
               {[
-                { Icon: LinkedinIcon, href: '#', label: 'LinkedIn' },
-                { Icon: XIcon, href: '#', label: 'X / Twitter' },
-                { Icon: FacebookIcon, href: '#', label: 'Facebook' },
+                { Icon: LinkedinIcon, href: 'https://www.linkedin.com/company/nextstep-iso/', label: 'LinkedIn' },
+                { Icon: InstagramIcon, href: 'https://www.instagram.com/nextstepiso', label: 'Instagram' },
               ].map(({ Icon, href, label }) => (
                 <a
                   key={label}
@@ -113,9 +109,9 @@ export default function Footer() {
             </h3>
             <ul className="flex flex-col gap-3">
               {[
-                { Icon: Phone, text: '1300 XXX XXX', href: 'tel:+611300000000' },
+                { Icon: Phone, text: '0494 718 985', href: 'tel:+61494718985' },
                 { Icon: Mail, text: 'hello@nextstepiso.com.au', href: 'mailto:hello@nextstepiso.com.au' },
-                { Icon: MapPin, text: 'Sydney, NSW — Australia-wide', href: null },
+                { Icon: MapPin, text: 'Melbourne, VIC — Australia-wide', href: null },
               ].map(({ Icon, text, href }) => (
                 <li key={text} className="flex items-start gap-2.5">
                   <Icon className="w-4 h-4 text-[#0d98cd] mt-0.5 shrink-0" />
@@ -134,7 +130,7 @@ export default function Footer() {
 
         <div className="border-t border-white/[0.07] pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-[0.8rem] text-gray-600">
-            © {new Date().getFullYear()} NextStep ISO Pty Ltd. ABN XX XXX XXX XXX. All rights reserved.
+            © {new Date().getFullYear()} NextStep ISO Pty Ltd. ABN 40 691 274 601. All rights reserved.
           </p>
           <div className="flex gap-5">
             {['Privacy Policy', 'Terms of Service'].map(t => (

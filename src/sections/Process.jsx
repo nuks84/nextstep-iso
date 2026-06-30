@@ -29,7 +29,7 @@ const steps = [
     number: '04',
     title: 'Audit & Certification',
     desc: 'We prepare you for the external audit, attend on the day, and handle any non-conformances. Our 98% first-audit pass rate speaks to our preparation quality.',
-    detail: 'Guaranteed results · Certificate issued',
+    detail: 'Expert support on the day',
   },
 ]
 
@@ -87,29 +87,11 @@ export default function Process() {
               How It Works
             </div>
             <h2 className="text-[2rem] sm:text-[2.4rem] font-extrabold tracking-tight leading-[1.12] text-white mb-5">
-              From first call to certified in as little as 45 days
+              A structured path from kickoff to certified
             </h2>
-            <p className="text-[1.05rem] text-white/55 leading-relaxed mb-8">
-              Our four-step process is the result of delivering over 100 successful certifications. Every step is designed to minimise disruption to your business while maximising your chances of a first-audit pass.
+            <p className="text-[1.05rem] text-white/55 leading-relaxed">
+              Our four-step process is the result of delivering successful certifications across a wide range of industries. Every step is designed to minimise disruption to your business while maximising your chances of a first-audit pass.
             </p>
-            <div className="bg-white/[0.04] border border-white/[0.08] rounded-2xl p-6">
-              <p className="text-[0.8rem] font-semibold uppercase tracking-wider text-white/40 mb-3">
-                Typical timeline
-              </p>
-              <div className="flex flex-col gap-2">
-                {[
-                  { phase: 'Gap Analysis',        time: 'Week 1' },
-                  { phase: 'System Development',  time: 'Weeks 2–8' },
-                  { phase: 'Internal Review',      time: 'Week 9' },
-                  { phase: 'Certification Audit',  time: 'Week 10–12' },
-                ].map(({ phase, time }) => (
-                  <div key={phase} className="flex items-center justify-between text-[0.875rem]">
-                    <span className="text-white/60 font-medium">{phase}</span>
-                    <span className="text-[#0d98cd] font-semibold">{time}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
 
           {/* Right — steps */}

@@ -3,7 +3,6 @@ import ServicesGrid from '../sections/ServicesGrid'
 import WhyUs from '../sections/WhyUs'
 import Process from '../sections/Process'
 import Industries from '../sections/Industries'
-import Testimonials from '../sections/Testimonials'
 import CallToAction from '../sections/CallToAction'
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
       <WhyUs />
       <Process />
       <Industries />
-      <Testimonials />
       <CallToAction />
     </>
   )

@@ -83,7 +83,7 @@ export default function ISO9001() {
               {[
                 { n: '1M+',  l: 'Certified organisations worldwide' },
                 { n: '98%',  l: 'Our first-audit pass rate' },
-                { n: '45d',  l: 'Average time to certification' },
+                { n: '15+',  l: 'Years of auditing experience' },
                 { n: '100+', l: 'Australian businesses certified by us' },
               ].map(({ n, l }) => (
                 <div key={l} className="bg-brand-50 border border-brand-200 rounded-2xl p-5 text-center">
@@ -119,7 +119,7 @@ export default function ISO9001() {
           {[
             {
               q: 'How long does ISO 9001 certification take?',
-              a: 'For most Australian SMEs, we achieve certification in 45–90 days. Businesses with existing documentation or processes may be ready in under 30 days. We\'ll give you a realistic timeline on your first call.',
+              a: 'The timeline varies depending on your business size, complexity, and existing documentation. We\'ll assess your current position and give you a realistic, personalised timeline on your first call.',
             },
             {
               q: 'How much does ISO 9001 certification cost?',

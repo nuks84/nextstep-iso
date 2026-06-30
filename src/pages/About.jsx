@@ -7,8 +7,6 @@ import { useReveal } from '../hooks/useReveal'
 
 const credentials = [
   'Certified Lead Auditor — ISO 9001, 45001, 14001',
-  'Provisional Member — Chartered Quality Institute (CQI)',
-  'Graduate Certificate in Risk Management, UNSW',
   'Former Quality Manager, Top 100 ASX Company',
   '15+ years in certification bodies and consulting',
 ]
@@ -64,19 +62,14 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
 
             {/* Photo placeholder */}
-            <div ref={founderRef} className="reveal">
-              <div className="relative">
-                <div className="aspect-[4/5] rounded-3xl bg-gradient-to-br from-brand-50 to-brand-100 border border-brand-200 flex items-center justify-center overflow-hidden relative">
-                  <div className="absolute top-0 right-0 w-72 h-72 rounded-full bg-[#0d98cd]/[0.08] -translate-y-1/2 translate-x-1/3" />
-                  <svg className="w-32 h-32 text-[#0d98cd]/30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                    <circle cx="12" cy="7" r="4" />
-                  </svg>
-                </div>
-                {/* Floating badge */}
-                <div className="absolute -bottom-5 -right-5 bg-white border border-gray-200 rounded-2xl px-5 py-4 shadow-xl">
-                  <div className="text-[1.6rem] font-extrabold text-[#0d98cd] leading-none">15+</div>
-                  <div className="text-[0.75rem] text-gray-500 font-medium mt-0.5">Years experience</div>
+            <div ref={founderRef} className="reveal flex justify-center">
+              <div className="relative w-[calc(50%+1.5cm)]">
+                <div className="aspect-[4/5] rounded-3xl overflow-hidden relative">
+                  <img
+                    src="/Linkedin profile pic.png"
+                    alt="Ranuka Abeysinghe"
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
               </div>
             </div>
@@ -87,14 +80,14 @@ export default function About() {
                 <span className="w-1.5 h-1.5 rounded-full bg-[#0d98cd]" />
                 About the Founder
               </div>
-              <h2 className="text-[2rem] font-extrabold text-gray-900 tracking-tight mb-1">Sarah Mitchell</h2>
+              <h2 className="text-[2rem] font-extrabold text-gray-900 tracking-tight mb-1">Ranuka Abeysinghe</h2>
               <p className="text-[0.95rem] font-semibold text-[#0d98cd] mb-5">Founder & Lead ISO Consultant</p>
 
               <p className="text-[0.95rem] text-gray-600 leading-relaxed mb-4">
-                After 15 years working inside certification bodies and as an in-house quality manager for major Australian corporates, Sarah founded NextStep ISO with a single mission: make world-class ISO support accessible to every Australian business.
+                After 15 years working with certification bodies and as an in-house Quality Manager for major Australian organisations, Ranuka founded NextStep ISO with a single mission: to make practical, world-class ISO support accessible to businesses of every size.
               </p>
               <p className="text-[0.95rem] text-gray-600 leading-relaxed mb-8">
-                "I saw too many businesses hand over large sums for generic templates that had nothing to do with how they actually operated. Worse, they'd fail their first audit and feel embarrassed. I wanted to change that — not just help businesses get certified, but help them build systems that genuinely improve how they work."
+                Throughout my career, I met many businesses that had invested significant time and money into management systems that didn't quite fit the way they worked. This often made the certification process more complicated than it needed to be. I wanted to take a different approach, helping businesses build practical, tailored systems that not only achieve certification but also support better ways of working long after the audit is complete.
               </p>
 
               <ul className="flex flex-col gap-3 mb-8">
@@ -106,7 +99,7 @@ export default function About() {
                 ))}
               </ul>
 
-              <Button to="/contact" arrow>Book a Call with Sarah</Button>
+              <Button to="/contact" arrow>Book a Call with Ranuka</Button>
             </div>
           </div>
         </div>

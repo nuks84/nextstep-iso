@@ -41,6 +41,18 @@
 .reveal-delay-4 { transition-delay: 0.34s; }
 .reveal-delay-5 { transition-delay: 0.42s; }
 
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateX(-32px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.hero-line {
+  display: block;
+  animation: heroFadeUp 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.hero-line-1 { animation-delay: 0.05s; }
+.hero-line-2 { animation-delay: 0.22s; }
+.hero-line-3 { animation-delay: 0.38s; }
+
 .dot-grid {
   background-image: radial-gradient(circle, rgba(13,152,205,0.10) 1px, transparent 1px);
   background-size: 36px 36px;
