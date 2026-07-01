@@ -7,6 +7,9 @@ import About from './pages/About'
 import ServicesPage from './pages/ServicesPage'
 import ISO9001 from './pages/ISO9001'
 import ISO27001 from './pages/ISO27001'
+import ISO45001 from './pages/ISO45001'
+import ISO14001 from './pages/ISO14001'
+import IMS from './pages/IMS'
 import InternalAudits from './pages/InternalAudits'
 import Contact from './pages/Contact'
 
@@ -37,6 +40,9 @@ export default function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/iso-9001" element={<ISO9001 />} />
           <Route path="/iso-27001" element={<ISO27001 />} />
+          <Route path="/iso-45001" element={<ISO45001 />} />
+          <Route path="/iso-14001" element={<ISO14001 />} />
+          <Route path="/ims" element={<IMS />} />
           <Route path="/internal-audits" element={<InternalAudits />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

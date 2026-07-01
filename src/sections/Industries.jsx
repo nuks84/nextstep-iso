@@ -17,7 +17,7 @@ function IndustryCard({ industry, delay }) {
   return (
     <div
       ref={ref}
-      className={`reveal reveal-delay-${delay} group bg-white border border-gray-200 rounded-2xl p-5 text-center hover:border-[#0d98cd]/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-default`}
+      className={`reveal reveal-delay-${delay} group bg-white border border-gray-100 rounded-2xl p-5 text-center hover:border-gray-200 hover:shadow-sm hover:-translate-y-0.5 transition-all duration-300 cursor-default`}
     >
       <div className="text-3xl mb-3 grayscale group-hover:grayscale-0 transition-all duration-300">
         {industry.emoji}
@@ -30,7 +30,7 @@ function IndustryCard({ industry, delay }) {
 
 export default function Industries() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-28 bg-[#fafafa]">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
         <SectionHeader
           tag="Industries We Serve"

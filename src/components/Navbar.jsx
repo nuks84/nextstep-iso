@@ -42,9 +42,18 @@ export default function Navbar() {
     return () => document.removeEventListener('mousedown', handler)
   }, [])
 
+  const isHome = pathname === '/'
+  const isDark = isHome && !scrolled
+
   const navBg = scrolled
-    ? 'bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100'
+    ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100'
     : 'bg-transparent'
+
+  const linkBase = isDark
+    ? 'text-white/60 hover:text-white hover:bg-white/[0.07]'
+    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+
+  const logoFilter = isDark ? 'brightness-0 invert' : ''
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navBg}`}>
@@ -56,7 +65,7 @@ export default function Navbar() {
             <img
               src="/NextSteo ISO Logo removebg v2.png"
               alt="NextStep ISO"
-              className="h-[50px] w-auto object-contain"
+              className={`h-[50px] w-auto object-contain transition-all duration-300 ${logoFilter}`}
             />
           </Link>
 
@@ -67,12 +76,10 @@ export default function Navbar() {
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setDropdownOpen(o => !o)}
-                className="flex items-center gap-1 px-3.5 py-2 rounded-lg text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors"
+                className={`flex items-center gap-1 px-3.5 py-2 rounded-lg transition-colors ${linkBase}`}
               >
                 Services
-                <ChevronDown
-                  className={`w-3.5 h-3.5 transition-transform duration-200 ${dropdownOpen ? 'rotate-180' : ''}`}
-                />
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${dropdownOpen ? 'rotate-180' : ''}`} />
               </button>
 
               {dropdownOpen && (
@@ -96,8 +103,8 @@ export default function Navbar() {
                 to={l.href}
                 className={`px-3.5 py-2 rounded-lg transition-colors ${
                   pathname === l.href
-                    ? 'text-[#0d98cd] bg-brand-50'
-                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                    ? isDark ? 'text-[#0d98cd] bg-white/[0.07]' : 'text-[#0d98cd] bg-brand-50'
+                    : linkBase
                 }`}
               >
                 {l.label}
@@ -109,7 +116,9 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-3">
             <a
               href="tel:+61494718985"
-              className="text-[0.87rem] font-semibold text-gray-600 hover:text-gray-900 transition-colors"
+              className={`text-[0.87rem] font-semibold transition-colors ${
+                isDark ? 'text-white/40 hover:text-white/70' : 'text-gray-600 hover:text-gray-900'
+              }`}
             >
               0494 718 985
             </a>
@@ -123,7 +132,9 @@ export default function Navbar() {
 
           {/* Hamburger */}
           <button
-            className="md:hidden p-2 text-gray-700 rounded-lg hover:bg-gray-100 transition-colors"
+            className={`md:hidden p-2 rounded-lg transition-colors ${
+              isDark ? 'text-white/70 hover:bg-white/[0.07]' : 'text-gray-700 hover:bg-gray-100'
+            }`}
             onClick={() => setMobileOpen(o => !o)}
             aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
           >
@@ -148,7 +159,7 @@ export default function Navbar() {
                 {s.label}
               </Link>
             ))}
-            <div className="h-px bg-white/10 my-1" />
+            <div className="h-px bg-gray-100 my-1" />
             {navLinks.map(l => (
               <Link
                 key={l.href}

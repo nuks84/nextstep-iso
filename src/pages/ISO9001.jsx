@@ -1,4 +1,80 @@
-import { CheckCircle, TrendingUp, Users, FileCheck, Clock, Shield } from 'lucide-react'
+import { TrendingUp, Users, FileCheck, Clock, Shield } from 'lucide-react'
+
+const before = [
+  ['H','H','H','H','H'],
+  ['H','H','H','H','H'],
+  ['L','H','H','H','H'],
+  ['L','L','M','H','H'],
+  ['L','L','L','M','M'],
+]
+
+const after = [
+  ['L','N','N','N','N'],
+  ['L','L','L','M','M'],
+  ['L','L','M','N','N'],
+  ['L','L','L','M','N'],
+  ['L','L','L','L','L'],
+]
+
+const cellBg = t =>
+  t === 'H' ? 'bg-red-400' :
+  t === 'M' ? 'bg-amber-300' :
+  t === 'L' ? 'bg-emerald-400' :
+  'bg-gray-100'
+
+function Grid({ data }) {
+  return (
+    <div>
+      <div className="flex items-center gap-2">
+        <span
+          className="text-[0.6rem] font-medium text-gray-500 shrink-0"
+          style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}
+        >
+          Impact
+        </span>
+        <div className="flex flex-col gap-1">
+          {data.map((row, r) => (
+            <div key={r} className="flex gap-1">
+              {row.map((t, c) => (
+                <div key={c} className={`w-7 h-7 rounded-[3px] ${cellBg(t)}`} />
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+      <p className="text-[0.6rem] font-medium text-gray-500 text-center mt-1.5">Likelihood</p>
+    </div>
+  )
+}
+
+function RiskMatrix() {
+  return (
+    <div className="bg-white rounded-2xl border border-gray-100 p-7">
+      <p className="text-[0.75rem] font-bold uppercase tracking-[0.15em] text-gray-900 text-center mb-6">
+        Risk Management
+      </p>
+      <div className="flex items-center justify-between gap-4">
+        <div className="flex flex-col items-center gap-3">
+          <p className="text-[0.7rem] font-semibold text-gray-700">Before</p>
+          <Grid data={before} />
+        </div>
+        <div className="text-gray-300 text-xl">→</div>
+        <div className="flex flex-col items-center gap-3">
+          <p className="text-[0.7rem] font-semibold text-gray-700">After</p>
+          <Grid data={after} />
+        </div>
+      </div>
+      <div className="flex items-center justify-center gap-5 mt-5 pt-4 border-t border-gray-100">
+        {[['bg-red-400','High'],['bg-amber-300','Medium'],['bg-emerald-400','Low']].map(([cls, label]) => (
+          <div key={label} className="flex items-center gap-1.5">
+            <div className={`w-2.5 h-2.5 rounded-sm ${cls}`} />
+            <span className="text-[0.7rem] text-gray-600">{label}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
 import { PageHero } from '../components/PageHero'
 import { SectionHeader } from '../components/SectionHeader'
 import { Button } from '../components/Button'
@@ -79,19 +155,7 @@ export default function ISO9001() {
                 At NextStep ISO, we build you a quality management system that's custom to your business — not a generic template — and we guarantee you'll pass your first certification audit.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { n: '1M+',  l: 'Certified organisations worldwide' },
-                { n: '98%',  l: 'Our first-audit pass rate' },
-                { n: '15+',  l: 'Years of auditing experience' },
-                { n: '100+', l: 'Australian businesses certified by us' },
-              ].map(({ n, l }) => (
-                <div key={l} className="bg-brand-50 border border-brand-200 rounded-2xl p-5 text-center">
-                  <div className="text-[1.8rem] font-extrabold text-[#0d98cd] mb-1">{n}</div>
-                  <div className="text-[0.78rem] text-gray-500 font-medium">{l}</div>
-                </div>
-              ))}
-            </div>
+            <RiskMatrix />
           </div>
         </div>
       </section>

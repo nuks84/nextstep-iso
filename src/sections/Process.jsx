@@ -58,9 +58,9 @@ function Step({ step, idx }) {
         <div className="text-[0.72rem] font-bold uppercase tracking-widest text-[#0d98cd] mb-1">
           Step {number}
         </div>
-        <h3 className="text-[1.05rem] font-bold text-gray-900 mb-2">{title}</h3>
-        <p className="text-[0.875rem] text-gray-500 leading-relaxed mb-3">{desc}</p>
-        <span className="inline-block text-[0.72rem] font-semibold text-gray-400 bg-gray-100 rounded-full px-3 py-1">
+        <h3 className="text-[1.05rem] font-bold text-white/90 mb-2">{title}</h3>
+        <p className="text-[0.875rem] text-white/45 leading-relaxed mb-3">{desc}</p>
+        <span className="inline-block text-[0.72rem] font-semibold text-white/30 bg-white/[0.06] rounded-full px-3 py-1">
           {detail}
         </span>
       </div>
@@ -72,7 +72,7 @@ export default function Process() {
   const sideRef = useReveal()
 
   return (
-    <section className="py-24 bg-[#1a1a2e] relative overflow-hidden">
+    <section className="py-28 bg-[#0f0f0f] relative overflow-hidden">
       {/* Background glows */}
       <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-[#0d98cd]/[0.05] blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-[#0d98cd]/[0.04] blur-3xl pointer-events-none" />
@@ -82,14 +82,13 @@ export default function Process() {
 
           {/* Left — header + context */}
           <div ref={sideRef} className="reveal">
-            <div className="inline-flex items-center gap-1.5 bg-white/[0.06] border border-white/10 text-[#0d98cd] rounded-full px-3 py-1 text-[0.75rem] font-semibold uppercase tracking-widest mb-5">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#0d98cd]" />
+            <p className="text-[0.73rem] font-semibold uppercase tracking-[0.12em] text-white/40 mb-4">
               How It Works
-            </div>
-            <h2 className="text-[2rem] sm:text-[2.4rem] font-extrabold tracking-tight leading-[1.12] text-white mb-5">
+            </p>
+            <h2 className="text-[2.8rem] sm:text-[3.5rem] font-extrabold tracking-[-0.03em] leading-[1.08] text-white mb-5">
               A structured path from kickoff to certified
             </h2>
-            <p className="text-[1.05rem] text-white/55 leading-relaxed">
+            <p className="text-[1.05rem] text-white/50 leading-relaxed">
               Our four-step process is the result of delivering successful certifications across a wide range of industries. Every step is designed to minimise disruption to your business while maximising your chances of a first-audit pass.
             </p>
           </div>
