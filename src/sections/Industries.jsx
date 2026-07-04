@@ -2,13 +2,13 @@ import { SectionHeader } from '../components/SectionHeader'
 import { useReveal } from '../hooks/useReveal'
 
 const industries = [
-  { emoji: '🏗️', name: 'Construction',        desc: 'WHS, quality & environmental' },
+  { emoji: '🏗️', name: 'Construction',        desc: 'OH&S, quality & environmental' },
   { emoji: '⚙️', name: 'Manufacturing',       desc: 'Quality & environmental systems' },
   { emoji: '🏥', name: 'Healthcare',          desc: 'Quality & information security' },
   { emoji: '💻', name: 'Technology',          desc: 'ISO 27001 & quality management' },
   { emoji: '🏛️', name: 'Government',          desc: 'Regulatory & tender compliance' },
-  { emoji: '🚛', name: 'Logistics',           desc: 'Quality & WHS management' },
-  { emoji: '⚡', name: 'Energy & Utilities',  desc: 'Environmental & WHS systems' },
+  { emoji: '🚛', name: 'Logistics',           desc: 'Quality & OH&S management' },
+  { emoji: '⚡', name: 'Energy & Utilities',  desc: 'Environmental & OH&S systems' },
   { emoji: '🎓', name: 'Education',           desc: 'Quality management systems' },
 ]
 
@@ -30,7 +30,7 @@ function IndustryCard({ industry, delay }) {
 
 export default function Industries() {
   return (
-    <section className="py-28 bg-[#fafafa]">
+    <section className="py-20 bg-[#fafafa]">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
         <SectionHeader
           tag="Industries We Serve"

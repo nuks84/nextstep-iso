@@ -72,7 +72,7 @@ export default function Process() {
   const sideRef = useReveal()
 
   return (
-    <section className="py-28 bg-[#0f0f0f] relative overflow-hidden">
+    <section className="py-20 bg-[#0f0f0f] relative overflow-hidden">
       {/* Background glows */}
       <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-[#0d98cd]/[0.05] blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-[#0d98cd]/[0.04] blur-3xl pointer-events-none" />

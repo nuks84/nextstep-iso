@@ -19,12 +19,14 @@ const InstagramIcon = () => (
 const services = [
   { label: 'ISO 9001 — Quality', href: '/iso-9001' },
   { label: 'ISO 27001 — Security', href: '/iso-27001' },
+  { label: 'ISO 22000 — Food Safety', href: '/iso-22000' },
   { label: 'Internal Audits', href: '/internal-audits' },
   { label: 'All Services', href: '/services' },
 ]
 
 const company = [
   { label: 'About Us', href: '/about' },
+  { label: 'Resources', href: '/resources' },
   { label: 'Contact', href: '/contact' },
 ]
 

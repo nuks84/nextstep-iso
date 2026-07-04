@@ -6,11 +6,13 @@ const serviceLinks = [
   { label: 'All Services', href: '/services' },
   { label: 'ISO 9001 — Quality Management', href: '/iso-9001' },
   { label: 'ISO 27001 — Information Security', href: '/iso-27001' },
+  { label: 'ISO 22000 — Food Safety', href: '/iso-22000' },
   { label: 'Internal Audits', href: '/internal-audits' },
 ]
 
 const navLinks = [
   { label: 'About', href: '/about' },
+  { label: 'Resources', href: '/resources' },
   { label: 'Contact', href: '/contact' },
 ]
 
@@ -42,18 +44,11 @@ export default function Navbar() {
     return () => document.removeEventListener('mousedown', handler)
   }, [])
 
-  const isHome = pathname === '/'
-  const isDark = isHome && !scrolled
-
   const navBg = scrolled
     ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100'
     : 'bg-transparent'
 
-  const linkBase = isDark
-    ? 'text-white/60 hover:text-white hover:bg-white/[0.07]'
-    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-
-  const logoFilter = isDark ? 'brightness-0 invert' : ''
+  const linkBase = 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navBg}`}>
@@ -65,7 +60,7 @@ export default function Navbar() {
             <img
               src="/NextSteo ISO Logo removebg v2.png"
               alt="NextStep ISO"
-              className={`h-[50px] w-auto object-contain transition-all duration-300 ${logoFilter}`}
+              className="h-[50px] w-auto object-contain transition-all duration-300"
             />
           </Link>
 
@@ -102,9 +97,7 @@ export default function Navbar() {
                 key={l.href}
                 to={l.href}
                 className={`px-3.5 py-2 rounded-lg transition-colors ${
-                  pathname === l.href
-                    ? isDark ? 'text-[#0d98cd] bg-white/[0.07]' : 'text-[#0d98cd] bg-brand-50'
-                    : linkBase
+                  pathname === l.href ? 'text-[#0d98cd] bg-brand-50' : linkBase
                 }`}
               >
                 {l.label}
@@ -116,9 +109,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-3">
             <a
               href="tel:+61494718985"
-              className={`text-[0.87rem] font-semibold transition-colors ${
-                isDark ? 'text-white/40 hover:text-white/70' : 'text-gray-600 hover:text-gray-900'
-              }`}
+              className="text-[0.87rem] font-semibold transition-colors text-gray-600 hover:text-gray-900"
             >
               0494 718 985
             </a>
@@ -132,9 +123,7 @@ export default function Navbar() {
 
           {/* Hamburger */}
           <button
-            className={`md:hidden p-2 rounded-lg transition-colors ${
-              isDark ? 'text-white/70 hover:bg-white/[0.07]' : 'text-gray-700 hover:bg-gray-100'
-            }`}
+            className="md:hidden p-2 rounded-lg transition-colors text-gray-700 hover:bg-gray-100"
             onClick={() => setMobileOpen(o => !o)}
             aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
           >

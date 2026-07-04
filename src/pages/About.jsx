@@ -6,7 +6,7 @@ import CallToAction from '../sections/CallToAction'
 import { useReveal } from '../hooks/useReveal'
 
 const credentials = [
-  'Certified Lead Auditor — ISO 9001, 45001, 14001',
+  'Certified ISO Lead Auditor',
   'Former Quality Manager, Top 100 ASX Company',
   '15+ years in certification bodies and consulting',
 ]

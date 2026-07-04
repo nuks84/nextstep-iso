@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, BarChart3, Lock, HardHat, Leaf, FileSearch, Shield, CheckCircle } from 'lucide-react'
+import { ArrowRight, BarChart3, Lock, ChefHat, HardHat, Leaf, FileSearch, Shield, CheckCircle } from 'lucide-react'
 import { PageHero } from '../components/PageHero'
 import { Button } from '../components/Button'
 import CallToAction from '../sections/CallToAction'
@@ -41,15 +41,32 @@ const services = [
     ],
   },
   {
+    icon: ChefHat,
+    title: 'ISO 22000',
+    subtitle: 'Food Safety Management System',
+    href: '/iso-22000',
+    color: '#e11d48',
+    badge: 'Retail & Export',
+    desc: 'ISO 22000 is increasingly required by major retailers, food manufacturers, and export markets — and forms the foundation for GFSI-recognised FSSC 22000 certification.',
+    includes: [
+      'Food safety hazard analysis (HACCP-based)',
+      'Prerequisite programs and operational controls',
+      'Food safety policy and documentation',
+      'Staff training and system implementation',
+      'Internal audit preparation',
+      'External certification audit support',
+    ],
+  },
+  {
     icon: HardHat,
     title: 'ISO 45001',
-    subtitle: 'Workplace Health & Safety',
+    subtitle: 'Occupational Health & Safety',
     href: '/services',
     color: '#ea580c',
     badge: 'High Demand',
-    desc: 'ISO 45001 demonstrates your commitment to worker safety and satisfies WHS obligations across construction, manufacturing, and government contracts.',
+    desc: 'ISO 45001 demonstrates your commitment to worker safety and satisfies OH&S obligations across construction, manufacturing, and government contracts.',
     includes: [
-      'WHS legal register and compliance review',
+      'OH&S legal register and compliance review',
       'Hazard identification and risk controls',
       'Safe Work Method Statements (SWMS)',
       'Incident reporting and investigation procedures',

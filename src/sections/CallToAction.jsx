@@ -6,7 +6,7 @@ export default function CallToAction() {
   const ref = useReveal()
 
   return (
-    <section className="py-28 bg-[#0f0f0f] relative overflow-hidden">
+    <section className="py-20 bg-[#0f0f0f] relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full bg-[#0d98cd]/[0.06] blur-[120px]" />
       </div>

@@ -6,7 +6,8 @@ import { useReveal } from '../hooks/useReveal'
 const standards = [
   'ISO 9001 — Quality Management',
   'ISO 27001 — Information Security',
-  'ISO 45001 — WHS Management',
+  'ISO 22000 — Food Safety Management',
+  'ISO 45001 — OH&S Management',
   'ISO 14001 — Environmental',
   'Integrated Management System (IMS)',
   'Internal Audits / Ongoing Maintenance',

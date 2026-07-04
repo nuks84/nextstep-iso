@@ -7,7 +7,7 @@ import Process from '../sections/Process'
 import { useReveal } from '../hooks/useReveal'
 
 const benefits = [
-  { icon: Shield,       title: 'Meet WHS Obligations',         desc: 'ISO 45001 aligns with Work Health and Safety legislation across all Australian states and territories, helping you demonstrate legal compliance and due diligence.' },
+  { icon: Shield,       title: 'Meet OH&S Obligations',        desc: 'ISO 45001 aligns with Work Health and Safety legislation across all Australian states and territories, helping you demonstrate legal compliance and due diligence.' },
   { icon: AlertTriangle,title: 'Reduce Workplace Incidents',   desc: 'A systematic approach to hazard identification and risk control leads to fewer incidents, lower workers\' compensation costs, and a safer workplace.' },
   { icon: TrendingUp,   title: 'Win Government Contracts',     desc: 'ISO 45001 is a prerequisite for government panels, construction accreditation schemes, and major infrastructure contracts across Australia.' },
   { icon: Users,        title: 'Demonstrate Duty of Care',     desc: 'Certification shows workers, clients, and regulators that you take safety seriously — protecting your people and your reputation.' },
@@ -75,7 +75,7 @@ export default function ISO45001() {
                 In Australia, ISO 45001 is increasingly required by government procurement, construction and infrastructure projects, and major supply chains. It complements — and helps demonstrate compliance with — the WHS Act and state-based legislation.
               </p>
               <p className="text-[0.95rem] text-gray-600 leading-relaxed">
-                At NextStep ISO, we build your WHS management system around how your business actually operates — ensuring it's practical to maintain, not just compliant on paper.
+                At NextStep ISO, we build your OH&S management system around how your business actually operates — ensuring it's practical to maintain, not just compliant on paper.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -124,8 +124,8 @@ export default function ISO45001() {
               a: 'Our fixed consulting fee for a single-standard ISO 45001 engagement typically starts from $3,500–$6,500 + GST, depending on business size and complexity. Separate certification body fees of approximately $1,800–$4,500 also apply.',
             },
             {
-              q: 'Do we already need a WHS management system in place?',
-              a: 'No — we can build your WHS management system from the ground up. If you already have safety procedures in place, we\'ll assess what exists and build on it, which can reduce time and cost.',
+              q: 'Do we already need an OH&S management system in place?',
+              a: 'No — we can build your OH&S management system from the ground up. If you already have safety procedures in place, we\'ll assess what exists and build on it, which can reduce time and cost.',
             },
             {
               q: 'Does ISO 45001 replace compliance with WHS legislation?',

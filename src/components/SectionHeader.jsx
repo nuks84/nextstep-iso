@@ -21,7 +21,7 @@ export function SectionHeader({ tag, title, subtitle, center = false, light = fa
         {title}
       </h2>
       {subtitle && (
-        <p className={`text-[1.05rem] leading-relaxed max-w-xl ${light ? 'text-white/50' : 'text-gray-500'}`}>
+        <p className={`text-[1.05rem] leading-relaxed max-w-xl ${center ? 'mx-auto' : ''} ${light ? 'text-white/50' : 'text-gray-500'}`}>
           {subtitle}
         </p>
       )}

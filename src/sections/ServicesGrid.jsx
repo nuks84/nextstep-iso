@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom'
-import { Shield, Lock, HardHat, Leaf, BarChart3, FileSearch, Sparkles } from 'lucide-react'
+import { Shield, Lock, HardHat, Leaf, BarChart3, ChefHat, FileSearch, Sparkles } from 'lucide-react'
 import { SectionHeader } from '../components/SectionHeader'
 import { useReveal } from '../hooks/useReveal'
 
 const services = [
   { icon: BarChart3,  title: 'ISO 9001',       sub: 'Quality Management',   href: '/iso-9001',        color: '#0d98cd' },
   { icon: Lock,       title: 'ISO 27001',      sub: 'Information Security', href: '/iso-27001',       color: '#7c3aed' },
-  { icon: HardHat,    title: 'ISO 45001',      sub: 'WHS Management',       href: '/iso-45001',       color: '#ea580c' },
+  { icon: ChefHat,    title: 'ISO 22000',      sub: 'Food Safety',          href: '/iso-22000',       color: '#e11d48' },
+  { icon: HardHat,    title: 'ISO 45001',      sub: 'OH&S Management',      href: '/iso-45001',       color: '#ea580c' },
   { icon: Leaf,       title: 'ISO 14001',      sub: 'Environmental',        href: '/iso-14001',       color: '#16a34a' },
   { icon: FileSearch, title: 'Internal Audits',sub: 'Gap & Compliance',     href: '/internal-audits', color: '#0891b2' },
   { icon: Shield,     title: 'IMS',            sub: 'Integrated Systems',   href: '/ims',             color: '#a855f7' },
@@ -66,14 +67,14 @@ function AICard() {
 
 export default function ServicesGrid() {
   return (
-    <section className="py-28 bg-[#fafafa]">
+    <section className="py-20 bg-[#fafafa]">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
         <SectionHeader
           tag="Our Services"
           title="Everything you need to get certified"
           subtitle="From initial gap analysis to final certification — and everything in between. We handle the complexity so you can focus on your business."
         />
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3">
           {services.map((s, i) => (
             <ServiceCard key={s.title} service={s} delay={(i % 3) + 1} />
           ))}
