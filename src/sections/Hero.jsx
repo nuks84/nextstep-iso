@@ -37,12 +37,12 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-white">
+    <section className="relative flex items-center overflow-hidden bg-white">
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[700px] rounded-full bg-[#0d98cd]/[0.06] blur-[160px]" />
       </div>
 
-      <div className="relative w-full max-w-5xl mx-auto px-5 sm:px-8 py-32 lg:py-40 text-center">
+      <div className="relative w-full max-w-5xl mx-auto px-5 sm:px-8 py-20 text-center">
 
         <div className="flex flex-wrap items-center justify-center gap-y-4 mb-8">
           {standards.map((s, i) => {
