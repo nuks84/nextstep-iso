@@ -34,6 +34,26 @@ function ServiceCard({ service, delay }) {
   )
 }
 
+function AITile() {
+  const ref = useReveal()
+  return (
+    <div ref={ref} className="reveal sm:hidden">
+      <Link
+        to="/ai"
+        className="group flex flex-col gap-3 rounded-2xl border border-[#1a1a2e] bg-[#1a1a2e] p-4 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
+      >
+        <div className="w-9 h-9 rounded-full flex items-center justify-center shrink-0" style={{ background: '#f59e0b22' }}>
+          <Sparkles className="w-4 h-4" style={{ color: '#f59e0b' }} />
+        </div>
+        <div>
+          <p className="text-[0.85rem] font-bold text-white leading-tight">NextStep AI →</p>
+          <p className="text-[0.75rem] text-white/45 mt-0.5">Coming soon</p>
+        </div>
+      </Link>
+    </div>
+  )
+}
+
 function AICard() {
   const ref = useReveal()
   return (
@@ -78,8 +98,11 @@ export default function ServicesGrid() {
           {services.map((s, i) => (
             <ServiceCard key={s.title} service={s} delay={(i % 3) + 1} />
           ))}
+          <AITile />
         </div>
-        <AICard />
+        <div className="hidden sm:block">
+          <AICard />
+        </div>
       </div>
     </section>
   )

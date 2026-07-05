@@ -117,7 +117,7 @@ export default function Navbar() {
               to="/contact"
               className="px-4 py-2 text-[0.875rem] font-semibold bg-[#0d98cd] text-white rounded-xl hover:bg-[#0a7aaa] transition-colors shadow-sm"
             >
-              Free Consultation
+              Build My Roadmap
             </Link>
           </div>
 
@@ -163,7 +163,7 @@ export default function Navbar() {
               to="/contact"
               className="mt-1 px-4 py-3 text-[0.9rem] font-semibold bg-[#0d98cd] text-white rounded-xl text-center hover:bg-[#0a7aaa] transition-colors"
             >
-              Free Consultation
+              Build My Roadmap
             </Link>
           </div>
         </div>

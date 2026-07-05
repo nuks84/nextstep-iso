@@ -150,7 +150,7 @@ function PackageCard({ pkg, idx }) {
 
 export default function Packages() {
   return (
-    <section className="py-20 bg-[#fafafa]">
+    <section id="packages" className="py-20 bg-[#fafafa] scroll-mt-20">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
         <SectionHeader
           center
