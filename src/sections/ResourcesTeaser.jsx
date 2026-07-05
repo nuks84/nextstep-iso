@@ -110,7 +110,7 @@ export default function ResourcesTeaser() {
             title="A few resources to get you started"
           />
         </div>
-        <div className="flex flex-col gap-5 px-5 sm:grid sm:grid-cols-3 sm:gap-6 sm:px-8">
+        <div className="flex flex-col gap-5 px-5 sm:px-8 md:grid md:grid-cols-3 md:gap-6">
           {resources.map((r, i) => (
             <ResourceCard key={r.title} r={r} delay={i + 1} />
           ))}
