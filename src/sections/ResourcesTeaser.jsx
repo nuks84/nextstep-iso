@@ -76,7 +76,7 @@ function ResourceCard({ r, delay }) {
     : { to: href }
 
   return (
-    <div ref={ref} className={`reveal reveal-delay-${delay}`}>
+    <div ref={ref} className={`reveal reveal-delay-${delay} shrink-0 w-[78%] snap-center sm:w-auto sm:shrink`}>
       <Wrapper
         {...wrapperProps}
         className="group flex flex-col rounded-2xl border-2 bg-white h-full overflow-hidden transition-all duration-200 hover:-translate-y-1 shadow-md hover:shadow-xl"
@@ -103,12 +103,14 @@ function ResourceCard({ r, delay }) {
 export default function ResourcesTeaser() {
   return (
     <section className="py-20 bg-white">
-      <div className="max-w-6xl mx-auto px-5 sm:px-8">
-        <SectionHeader
-          tag="Free Resources"
-          title="A few resources to get you started"
-        />
-        <div className="grid grid-cols-3 gap-5 sm:gap-6">
+      <div className="max-w-6xl mx-auto">
+        <div className="px-5 sm:px-8">
+          <SectionHeader
+            tag="Free Resources"
+            title="A few resources to get you started"
+          />
+        </div>
+        <div className="flex overflow-x-auto snap-x snap-mandatory gap-5 px-5 pb-2 sm:grid sm:grid-cols-3 sm:gap-6 sm:overflow-visible sm:px-8">
           {resources.map((r, i) => (
             <ResourceCard key={r.title} r={r} delay={i + 1} />
           ))}
