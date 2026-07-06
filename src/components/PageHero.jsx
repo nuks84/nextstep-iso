@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
 import { ChevronRight } from 'lucide-react'
 
-export function PageHero({ breadcrumb, tag, title, subtitle, cta }) {
+export function PageHero({ breadcrumb, tag, title, subtitle, cta, tightBottom }) {
   return (
-    <section className="pt-[100px] pb-16 bg-gradient-to-b from-brand-50 to-white relative overflow-hidden">
+    <section className={`pt-[100px] ${tightBottom ? 'pb-6' : 'pb-16'} bg-gradient-to-b from-brand-50 to-white relative overflow-hidden`}>
       <div className="absolute inset-0 dot-grid opacity-60" />
       <div className="relative max-w-6xl mx-auto px-5 sm:px-8 text-center">
         {breadcrumb && (

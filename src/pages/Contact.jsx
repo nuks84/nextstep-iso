@@ -9,9 +9,10 @@ export default function Contact() {
         tag="Contact Us"
         title="Start your ISO journey today"
         subtitle="Answer a few quick questions and we'll put together a tailored certification roadmap for your business — no obligation, no jargon."
+        tightBottom
       />
 
-      <section className="pt-4 pb-20 bg-white">
+      <section className="pb-20 bg-white">
         <div className="max-w-6xl mx-auto px-5 sm:px-8">
           <EnquiryFlow />
         </div>

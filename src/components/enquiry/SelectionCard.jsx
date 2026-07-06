@@ -10,7 +10,7 @@ export function SelectionCard({ icon: Icon, label, selected, onClick, multi = fa
       onClick={onClick}
       whileHover={{ y: -3 }}
       whileTap={{ scale: 0.97 }}
-      className={`group relative flex flex-col items-center justify-center gap-3 rounded-2xl border-2 p-6 text-center transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0d98cd] focus-visible:ring-offset-2 ${
+      className={`group relative flex flex-col items-center justify-center gap-3 rounded-2xl border-2 px-2 py-6 text-center transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0d98cd] focus-visible:ring-offset-2 ${
         selected
           ? 'border-[#0d98cd] bg-brand-50'
           : 'border-gray-200 bg-white hover:border-gray-300 hover:bg-gray-50'
@@ -25,7 +25,7 @@ export function SelectionCard({ icon: Icon, label, selected, onClick, multi = fa
           <Icon className="w-5 h-5" />
         </div>
       )}
-      <span className={`text-[0.9rem] font-bold leading-snug ${selected ? 'text-[#0d98cd]' : 'text-gray-800'}`}>
+      <span className={`text-[0.8rem] font-bold leading-snug whitespace-nowrap ${selected ? 'text-[#0d98cd]' : 'text-gray-800'}`}>
         {label}
       </span>
 

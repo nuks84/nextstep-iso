@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import {
-  BarChart3, Leaf, Lock, ChefHat, FlaskConical, FileSearch, Search, HelpCircle,
+  BarChart3, Leaf, Lock, ChefHat, HardHat, Shield, FlaskConical, Utensils, FileSearch, Search,
   Rocket, Settings, BadgeCheck, TrendingUp,
   Zap, Calendar, CalendarClock, BookOpen,
   ArrowRight, ArrowLeft, User, Mail, Phone, CheckCircle2,
@@ -14,13 +14,15 @@ const TOTAL_STEPS = 4
 
 const GOALS = [
   { id: 'iso9001', label: 'ISO 9001', icon: BarChart3 },
-  { id: 'iso14001', label: 'ISO 14001', icon: Leaf },
   { id: 'iso27001', label: 'ISO 27001', icon: Lock },
-  { id: 'haccp', label: 'HACCP', icon: ChefHat },
+  { id: 'iso22000', label: 'ISO 22000', icon: ChefHat },
+  { id: 'iso45001', label: 'ISO 45001', icon: HardHat },
+  { id: 'iso14001', label: 'ISO 14001', icon: Leaf },
+  { id: 'audits', label: 'Internal Audits', icon: FileSearch },
+  { id: 'ims', label: 'IMS', icon: Shield },
+  { id: 'haccp', label: 'HACCP', icon: Utensils },
   { id: 'gmp', label: 'GMP', icon: FlaskConical },
-  { id: 'audit', label: 'Internal Audit', icon: FileSearch },
   { id: 'gap', label: 'Gap Analysis', icon: Search },
-  { id: 'unsure', label: 'Not Sure Yet', icon: HelpCircle },
 ]
 
 const STAGES = [
@@ -191,7 +193,7 @@ export function EnquiryFlow() {
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
           >
             <StepHeadline>What can we help you achieve?</StepHeadline>
-            <div role="group" aria-label="What can we help you achieve?" className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div role="group" aria-label="What can we help you achieve?" className="grid grid-cols-2 sm:grid-cols-5 gap-4">
               {GOALS.map(g => (
                 <SelectionCard
                   key={g.id}
