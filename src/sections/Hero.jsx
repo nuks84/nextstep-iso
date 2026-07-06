@@ -32,13 +32,13 @@ export default function Hero() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[700px] rounded-full bg-[#0d98cd]/[0.06] blur-[160px]" />
       </div>
 
-      <div className="relative w-full max-w-5xl mx-auto px-5 sm:px-8 py-20 text-center">
+      <div className="relative w-full max-w-5xl mx-auto px-5 sm:px-8 pt-[140px] pb-20 text-center">
 
-        <h1 className="flex items-center justify-center flex-wrap gap-x-[0.3em] gap-y-2 text-[clamp(2.3rem,8.8vw,6.8rem)] font-semibold tracking-[-0.03em] leading-tight text-[#0f0f0f] mb-6">
+        <h1 className="flex items-center justify-center flex-wrap gap-x-[0.3em] gap-y-2 text-[clamp(2.7rem,9.5vw,6.8rem)] font-extrabold tracking-[-0.03em] leading-tight text-[#0f0f0f] mb-6">
           <span className="w-full">Build systems</span>
           <span>that</span>
           <span
-            className="relative inline-flex items-center gap-[0.25em] px-[0.32em] py-[0.05em] rounded-full shrink-0 font-normal text-[clamp(1.15rem,4.4vw,3.4rem)] transition-colors duration-300"
+            className="relative inline-flex items-center gap-[0.25em] px-[0.32em] py-[0.05em] rounded-full shrink-0 font-semibold text-[clamp(1.35rem,4.75vw,3.4rem)] transition-colors duration-300"
             style={{ background: `${rotatingWords[wordIndex].color}1f` }}
           >
             <span

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Phone } from 'lucide-react'
+import { ArrowRight, MessageCircle } from 'lucide-react'
 import { useReveal } from '../hooks/useReveal'
 
 export default function CallToAction() {
@@ -28,17 +28,19 @@ export default function CallToAction() {
               to="/contact"
               className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-[#0d98cd] text-white font-semibold rounded-xl text-[1rem] hover:bg-[#0a7aaa] transition-all hover:-translate-y-px shadow-lg shadow-[#0d98cd]/20"
             >
-              Book My Free Discovery Call
+              Book a Free Call
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
 
           <a
-            href="tel:+61494718985"
+            href="https://wa.me/61494718985"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-6 inline-flex items-center justify-center gap-2 text-white/70 font-medium hover:text-white transition-colors"
           >
-            <Phone className="w-4 h-4" />
-            0494 718 985
+            <MessageCircle className="w-4 h-4" />
+            Chat on WhatsApp
           </a>
 
           <p className="mt-8 text-[0.8rem] text-white/25">
