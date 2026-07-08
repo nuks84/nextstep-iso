@@ -5,6 +5,7 @@ import Packages from '../sections/Packages'
 import Process from '../sections/Process'
 import Industries from '../sections/Industries'
 import ResourcesTeaser from '../sections/ResourcesTeaser'
+import LatestInsights from '../sections/LatestInsights'
 import CallToAction from '../sections/CallToAction'
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Process />
       <Industries />
       <ResourcesTeaser />
+      <LatestInsights />
       <CallToAction />
     </>
   )

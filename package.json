@@ -5,12 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "node scripts/generate-sitemap.mjs",
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "pdf": "node scripts/generate-pdfs.mjs"
+    "pdf": "node scripts/generate-pdfs.mjs",
+    "sitemap": "node scripts/generate-sitemap.mjs"
   },
   "dependencies": {
+    "@mdx-js/rollup": "^3.1.1",
     "@tailwindcss/vite": "^4.3.2",
     "framer-motion": "^12.42.2",
     "lucide-react": "^1.22.0",

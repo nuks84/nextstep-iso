@@ -1,6 +1,6 @@
 import { useReveal } from '../hooks/useReveal'
 
-export function SectionHeader({ tag, title, subtitle, center = false, light = false }) {
+export function SectionHeader({ tag, title, subtitle, center = false, light = false, headingId }) {
   const ref = useReveal()
 
   return (
@@ -15,7 +15,7 @@ export function SectionHeader({ tag, title, subtitle, center = false, light = fa
           {tag}
         </p>
       )}
-      <h2 className={`text-[2.8rem] sm:text-[3.5rem] font-extrabold tracking-[-0.03em] leading-[1.08] mb-5 ${
+      <h2 id={headingId} className={`text-[2.8rem] sm:text-[3.5rem] font-extrabold tracking-[-0.03em] leading-[1.08] mb-5 ${
         light ? 'text-white' : 'text-gray-900'
       }`}>
         {title}

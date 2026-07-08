@@ -13,6 +13,8 @@ import ISO14001 from './pages/ISO14001'
 import IMS from './pages/IMS'
 import InternalAudits from './pages/InternalAudits'
 import Resources from './pages/Resources'
+import Insights from './pages/Insights'
+import InsightArticle from './pages/InsightArticle'
 import Contact from './pages/Contact'
 import PrintChecklist from './pages/print/PrintChecklist'
 import PrintStandards from './pages/print/PrintStandards'
@@ -49,6 +51,8 @@ function SiteRoutes() {
         <Route path="/ims" element={<IMS />} />
         <Route path="/internal-audits" element={<InternalAudits />} />
         <Route path="/resources" element={<Resources />} />
+        <Route path="/insights" element={<Insights />} />
+        <Route path="/insights/:slug" element={<InsightArticle />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Layout>

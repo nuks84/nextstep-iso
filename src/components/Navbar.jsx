@@ -12,6 +12,7 @@ const serviceLinks = [
 
 const navLinks = [
   { label: 'About', href: '/about' },
+  { label: 'Insights', href: '/insights' },
   { label: 'Resources', href: '/resources' },
   { label: 'Contact', href: '/contact' },
 ]
@@ -97,7 +98,7 @@ export default function Navbar() {
                 key={l.href}
                 to={l.href}
                 className={`px-3.5 py-2 rounded-lg transition-colors ${
-                  pathname === l.href ? 'text-[#0d98cd] bg-brand-50' : linkBase
+                  pathname === l.href || pathname.startsWith(`${l.href}/`) ? 'text-[#0d98cd] bg-brand-50' : linkBase
                 }`}
               >
                 {l.label}
