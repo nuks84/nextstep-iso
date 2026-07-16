@@ -90,9 +90,8 @@ export default function ServicesGrid() {
     <section className="py-20 bg-[#fafafa]">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
         <SectionHeader
-          tag="Our Services"
-          title="Everything you need to get certified"
-          subtitle="From initial gap analysis to final certification — and everything in between. We handle the complexity so you can focus on your business."
+          title="More than certification."
+          subtitle="Build systems that improve the way your business operates, before, during and long after the audit."
         />
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3">
           {services.map((s, i) => (

@@ -82,9 +82,6 @@ export default function Process() {
 
           {/* Left — header + context */}
           <div ref={sideRef} className="reveal">
-            <p className="text-[0.73rem] font-semibold uppercase tracking-[0.12em] text-white/40 mb-4">
-              How It Works
-            </p>
             <h2 className="text-[2.8rem] sm:text-[3.5rem] font-extrabold tracking-[-0.03em] leading-[1.08] text-white mb-5">
               A structured path from kickoff to certified
             </h2>

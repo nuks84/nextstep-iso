@@ -154,8 +154,7 @@ export default function Packages() {
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
         <SectionHeader
           center
-          tag="Why NextStep ISO"
-          title="Packages built around your budget"
+          title="Find the right plan for your needs."
           subtitle="From your first certification to ongoing compliance support, pick the level of partnership that fits where your business is at."
         />
         <div className="grid md:grid-cols-3 gap-6 md:gap-5 pt-2">

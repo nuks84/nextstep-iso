@@ -27,6 +27,10 @@ export function getArticleBySlug(slug) {
   return articles.find(a => a.slug === slug)
 }
 
+export function getFeaturedArticle() {
+  return articles.find(a => a.featured) ?? articles[0]
+}
+
 export function getRelatedArticles(current, limit = 3) {
   return articles
     .filter(a => a.slug !== current.slug)

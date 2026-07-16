@@ -66,7 +66,7 @@ export default function About() {
               <div className="relative w-[calc(50%+1.5cm)]">
                 <div className="aspect-[4/5] rounded-3xl overflow-hidden relative">
                   <img
-                    src="/Linkedin profile pic.png"
+                    src="/authors/ranuka-photo.png"
                     alt="Ranuka Abeysinghe"
                     className="w-full h-full object-cover object-top"
                   />

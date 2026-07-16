@@ -19,6 +19,9 @@ const staticRoutes = [
   { path: '/internal-audits', priority: '0.6', changefreq: 'monthly' },
   { path: '/resources', priority: '0.6', changefreq: 'monthly' },
   { path: '/insights', priority: '0.8', changefreq: 'weekly' },
+  { path: '/for/first-certification', priority: '0.6', changefreq: 'monthly' },
+  { path: '/for/improving-systems', priority: '0.6', changefreq: 'monthly' },
+  { path: '/for/growing-businesses', priority: '0.6', changefreq: 'monthly' },
   { path: '/contact', priority: '0.6', changefreq: 'yearly' },
 ]
 

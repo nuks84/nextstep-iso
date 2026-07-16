@@ -1,19 +1,23 @@
 import { useState, useMemo } from 'react'
-import { PageHero } from '../components/PageHero'
+import { Link } from 'react-router-dom'
+import { ChevronRight } from 'lucide-react'
 import { Seo } from '../components/Seo'
 import { JsonLd } from '../components/JsonLd'
 import { ArticleCard } from '../components/insights/ArticleCard'
+import { FeaturedArticle } from '../components/insights/FeaturedArticle'
 import CallToAction from '../sections/CallToAction'
-import { articles, categories } from '../content/insights'
+import { articles, categories, getFeaturedArticle } from '../content/insights'
 
 const SITE_URL = 'https://nextstepiso.com.au'
 
 export default function Insights() {
   const [activeCategory, setActiveCategory] = useState('All')
+  const featured = getFeaturedArticle()
 
   const filtered = useMemo(
-    () => (activeCategory === 'All' ? articles : articles.filter(a => a.category === activeCategory)),
-    [activeCategory]
+    () => (activeCategory === 'All' ? articles : articles.filter(a => a.category === activeCategory))
+      .filter(a => a.slug !== featured?.slug),
+    [activeCategory, featured]
   )
 
   const breadcrumbData = {
@@ -45,15 +49,27 @@ export default function Insights() {
       <JsonLd data={breadcrumbData} />
       <JsonLd data={collectionData} />
 
-      <PageHero
-        breadcrumb="Insights"
-        tag="Insights"
-        title="Guidance for Australian businesses pursuing ISO certification"
-        subtitle="Practical, no-nonsense articles on ISO certification, management systems, auditing and HACCP — written from real certification experience."
-      />
-
-      <section className="py-16 bg-white">
+      <section className="pt-[120px] pb-16 bg-white">
         <div className="max-w-6xl mx-auto px-5 sm:px-8">
+          <nav className="flex items-center gap-1.5 text-[0.8rem] text-gray-500 mb-6" aria-label="Breadcrumb">
+            <Link to="/" className="hover:text-[#0d98cd] transition-colors">Home</Link>
+            <ChevronRight className="w-3.5 h-3.5" />
+            <span className="text-gray-800 font-medium">Insights</span>
+          </nav>
+
+          <p className="text-[0.73rem] font-semibold uppercase tracking-[0.12em] text-[#0d98cd] mb-3">
+            Insights and updates
+          </p>
+          <h1 className="text-[2.2rem] sm:text-[2.6rem] font-extrabold tracking-[-0.02em] leading-[1.1] text-gray-900 mb-10">
+            Blog articles
+          </h1>
+
+          {featured && (
+            <div className="mb-14">
+              <FeaturedArticle article={featured} />
+            </div>
+          )}
+
           {categories.length > 1 && (
             <div className="flex flex-wrap gap-2 mb-10">
               {['All', ...categories].map(cat => (

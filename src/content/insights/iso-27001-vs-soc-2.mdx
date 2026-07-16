@@ -13,11 +13,11 @@ export const meta = {
   faqs: [
     {
       q: 'Is SOC 2 a certification like ISO 27001?',
-      a: "No, and this trips a lot of people up. ISO 27001 results in a certificate issued by an accredited certification body. SOC 2 results in an attestation report written by a licensed CPA firm, based on US auditing standards (AICPA's SSAE 18/AT-C 105). You don't 'pass' SOC 2 the way you pass an ISO audit — you receive a report describing how your controls performed, and if there were exceptions, they're documented in it rather than hidden.",
+      a: "No and this trips a lot of people up. ISO 27001 results in a certificate issued by an accredited certification body. SOC 2 results in an attestation report written by a licensed CPA firm, based on US auditing standards (AICPA's SSAE 18/AT-C 105). You don't 'pass' SOC 2 the way you pass an ISO audit - you receive a report describing how your controls performed and if there were exceptions, they're documented in it rather than hidden.",
     },
     {
       q: 'Can a small Australian business get SOC 2?',
-      a: "Yes, size isn't a barrier. What matters more is whether your auditor is a US-licensed CPA firm — most Australian SOC 2 engagements are run by firms with US affiliations or by specialist SOC 2 audit shops that operate internationally. It's a different sourcing exercise to finding a JAS-ANZ certification body for ISO 27001.",
+      a: "Yes, size isn't a barrier. What matters more is whether your auditor is a US-licensed CPA firm - most Australian SOC 2 engagements are run by firms with US affiliations or by specialist SOC 2 audit shops that operate internationally. It's a different sourcing exercise to finding a JAS-ANZ certification body for ISO 27001.",
     },
     {
       q: "How long does ISO 27001 certification take compared to a SOC 2 report?",
@@ -25,65 +25,65 @@ export const meta = {
     },
     {
       q: 'Does SOC 2 expire like an ISO 27001 certificate?',
-      a: "Not exactly, but the effect is similar. An ISO 27001 certificate is valid for three years with annual surveillance audits. A SOC 2 report is a snapshot — Type II reports typically cover a 6-12 month window — so most customers expect a new report annually. In practice, both frameworks mean you're back in front of an auditor every year.",
+      a: "Not exactly, but the effect is similar. An ISO 27001 certificate is valid for three years with annual surveillance audits. A SOC 2 report is a snapshot - Type II reports typically cover a 6-12 month window - so most customers expect a new report annually. In practice, both frameworks mean you're back in front of an auditor every year.",
     },
   ],
 }
 
 import { ArticleCTA } from '../../components/insights/ArticleCTA'
 
-This is the question I get asked more than any other, usually in the first five minutes of a call: "Do we need ISO 27001, or is SOC 2 the one we're supposed to get?" Nine times out of ten, the business asking hasn't picked a framework — they've been told by a customer, an investor or a tender document that they need "a security certification," without anyone specifying which one. So let's fix that. Here's the plain-English version, without the sales pitch.
+This is the question I get asked more than any other, usually in the first five minutes of a call: "Do we need ISO 27001, or is SOC 2 the one we're supposed to get?" Nine times out of ten, the business asking hasn't picked a framework - they've been told by a customer, an investor or a tender document that they need "a security certification," without anyone specifying which one. So let's fix that. Here's the plain-English version, without the sales pitch.
 
 ## What Is ISO 27001?
 
-ISO 27001 is an international standard for information security management, published by the [International Organization for Standardization](https://www.iso.org/standard/27001). It sets out requirements for building an Information Security Management System (ISMS) — the policies, risk assessments, controls and records that show you're managing information security deliberately, not by accident.
+ISO 27001 is an international standard for information security management, published by the [International Organization for Standardization](https://www.iso.org/standard/27001). It sets out requirements for building an Information Security Management System (ISMS) - the policies, risk assessments, controls and records that show you're managing information security deliberately, not by accident.
 
-The structure will look familiar if you've seen any other management system standard: clauses covering leadership, planning, risk treatment, and continual improvement, backed by Annex A — a set of 93 security controls (access control, cryptography, supplier relationships, incident management, and so on) that you select from based on your actual risk assessment, not blindly implement in full.
+The structure will look familiar if you've seen any other management system standard: clauses covering leadership, planning, risk treatment and continual improvement, backed by Annex A - a set of 93 security controls (access control, cryptography, supplier relationships, incident management and so on) that you select from based on your actual risk assessment, not blindly implement in full.
 
-Certification is issued by an accredited certification body after a two-stage audit, and it's valid for three years with annual surveillance audits in between. It's a genuine certificate — a document with a registration number that a customer, regulator or auditor can independently verify.
+Certification is issued by an accredited certification body after a two-stage audit and it's valid for three years with annual surveillance audits in between. It's a genuine certificate - a document with a registration number that a customer, regulator or auditor can independently verify.
 
 ## What Is SOC 2?
 
-SOC 2 (System and Organization Controls 2) is a reporting framework developed by the [American Institute of Certified Public Accountants (AICPA)](https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services). It assesses how well your controls meet the five "Trust Services Criteria" — security, availability, processing integrity, confidentiality and privacy — though in practice almost every business only pursues the security criterion, with the others added if they're genuinely relevant.
+SOC 2 (System and Organization Controls 2) is a reporting framework developed by the [American Institute of Certified Public Accountants (AICPA)](https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services). It assesses how well your controls meet the five "Trust Services Criteria" - security, availability, processing integrity, confidentiality and privacy - though in practice almost every business only pursues the security criterion, with the others added if they're genuinely relevant.
 
-The important distinction: SOC 2 doesn't produce a certificate. It produces an **attestation report**, written by a licensed CPA firm, describing your controls and — for a Type II report — testing whether they actually operated effectively over a defined period, usually six to twelve months. A Type I report is a point-in-time opinion; Type II is the one most B2B software buyers actually want, because it proves the controls held up over time, not just on audit day.
+The important distinction: SOC 2 doesn't produce a certificate. It produces an **attestation report**, written by a licensed CPA firm, describing your controls and - for a Type II report - testing whether they actually operated effectively over a defined period, usually six to twelve months. A Type I report is a point-in-time opinion; Type II is the one most B2B software buyers actually want, because it proves the controls held up over time, not just on audit day.
 
 SOC 2 was built for the US market and is most common among SaaS and technology companies selling into it, but Australian and other international businesses pursue it constantly now, particularly if a chunk of their customer base is American.
 
 ## The Biggest Misconceptions
 
-**"SOC 2 is easier than ISO 27001."** Not necessarily — it's *different*, not lighter. SOC 2 Type II in particular requires evidence that controls operated consistently for months, which can feel more demanding than a one-off ISO audit if your processes aren't already disciplined day-to-day.
+**"SOC 2 is easier than ISO 27001."** Not necessarily - it's *different*, not lighter. SOC 2 Type II in particular requires evidence that controls operated consistently for months, which can feel more demanding than a one-off ISO audit if your processes aren't already disciplined day-to-day.
 
-**"You either pass or fail SOC 2."** You don't. The auditor's report documents what they found, including any exceptions. A report with a couple of noted exceptions still gets issued — it's not a pass/fail gate the way an ISO certification decision is.
+**"You either pass or fail SOC 2."** You don't. The auditor's report documents what they found, including any exceptions. A report with a couple of noted exceptions still gets issued - it's not a pass/fail gate the way an ISO certification decision is.
 
-**"They cover the same ground, so it doesn't matter which one you pick."** They overlap heavily on substance — access control, change management, incident response, vendor risk — but they answer a different question. ISO 27001 tells the market "our security management system meets an internationally recognised standard." SOC 2 tells a specific customer "here is independently verified evidence our controls actually worked over this period." Same underlying discipline, different currency.
+**"They cover the same ground, so it doesn't matter which one you pick."** They overlap heavily on substance - access control, change management, incident response, vendor risk - but they answer a different question. ISO 27001 tells the market "our security management system meets an internationally recognised standard." SOC 2 tells a specific customer "here is independently verified evidence our controls actually worked over this period." Same underlying discipline, different currency.
 
-**"Once you have one, the other is basically automatic."** There's real, useful overlap in the underlying controls — enough that going second is meaningfully faster than starting cold — but you still need a fresh gap assessment and audit for whichever framework you add.
+**"Once you have one, the other is basically automatic."** There's real, useful overlap in the underlying controls - enough that going second is meaningfully faster than starting cold - but you still need a fresh gap assessment and audit for whichever framework you add.
 
 ## Which Businesses Should Choose ISO 27001?
 
 In my experience, ISO 27001 is the better fit when:
 
 - You sell primarily into Australia, the UK, Europe or Asia, where ISO certification is the more widely recognised reference point
-- You're responding to government or enterprise tenders that specifically ask for "ISO 27001 certified" — a SOC 2 report often won't satisfy that box on the form
+- You're responding to government or enterprise tenders that specifically ask for "ISO 27001 certified" - a SOC 2 report often won't satisfy that box on the form
 - You want a single security certification that sits alongside other ISO standards you already hold (ISO 9001, ISO 45001) under one integrated management system
-- Your customer base is broad and international rather than concentrated in US enterprise software buyers — a certificate is easier to point to generically than a report written for a US audience
+- Your customer base is broad and international rather than concentrated in US enterprise software buyers - a certificate is easier to point to generically than a report written for a US audience
 - You want the three-year certification cycle rather than refreshing an attestation report annually
 
 ## Which Businesses Should Choose SOC 2?
 
 SOC 2 tends to be the right call when:
 
-- You're a SaaS or technology company selling to US-based customers, particularly mid-market and enterprise software buyers — SOC 2 Type II is often a hard requirement in their vendor security questionnaire, not a nice-to-have
+- You're a SaaS or technology company selling to US-based customers, particularly mid-market and enterprise software buyers - SOC 2 Type II is often a hard requirement in their vendor security questionnaire, not a nice-to-have
 - Your sales cycle is being held up right now by prospects asking for "a SOC 2 report" by name
 - You want to demonstrate operational maturity over time (Type II) rather than a point-in-time assessment
 - You're moving fast and want to scope the engagement tightly to the Trust Services Criteria that actually matter to your customers, rather than a broader management system
 
 ## Can You Have Both?
 
-Yes, and plenty of growing tech businesses eventually do — usually ISO 27001 first for the broader market and tenders, then SOC 2 once US enterprise deals start showing up in the pipeline, or the other way around depending on which market opened up first.
+Yes and plenty of growing tech businesses eventually do - usually ISO 27001 first for the broader market and tenders, then SOC 2 once US enterprise deals start showing up in the pipeline, or the other way around depending on which market opened up first.
 
-The good news is the overlap does real work for you. Once you've built an ISMS for ISO 27001 — risk assessments, access control policies, incident response procedures, vendor management — a large share of that evidence maps directly onto SOC 2's control criteria. You're not starting from zero on the second framework; you're mostly re-presenting existing controls against a different set of criteria and adding whatever gaps the new framework introduces. I'd still budget for a proper gap assessment before assuming it's a light lift — "mostly the same" and "the same" are not the same thing when an auditor is involved.
+The good news is the overlap does real work for you. Once you've built an ISMS for ISO 27001 - risk assessments, access control policies, incident response procedures, vendor management - a large share of that evidence maps directly onto SOC 2's control criteria. You're not starting from zero on the second framework; you're mostly re-presenting existing controls against a different set of criteria and adding whatever gaps the new framework introduces. I'd still budget for a proper gap assessment before assuming it's a light lift - "mostly the same" and "the same" are not the same thing when an auditor is involved.
 
 <ArticleCTA
   heading="Not sure which framework fits your business?"
@@ -94,16 +94,16 @@ The good news is the overlap does real work for you. Once you've built an ISMS f
 
 ## My Recommendation to Clients
 
-I don't have a default answer here, and I'd be suspicious of anyone who does — it genuinely depends on who's asking for it. The first question I ask every client is: **"Who is actually requesting this, and what did they ask for by name?"** If it's a government tender or an Australian enterprise customer, that's usually ISO 27001. If it's a US software buyer's security questionnaire, that's usually SOC 2. If nobody's specifically asked yet and you're doing this proactively to open doors, I lean ISO 27001 for most Australian SMEs, simply because it's the more broadly recognised reference point outside the US and it plays well alongside standards like [ISO 9001](/iso-9001) if you're already running a quality system.
+I don't have a default answer here and I'd be suspicious of anyone who does - it genuinely depends on who's asking for it. The first question I ask every client is: **"Who is actually requesting this and what did they ask for by name?"** If it's a government tender or an Australian enterprise customer, that's usually ISO 27001. If it's a US software buyer's security questionnaire, that's usually SOC 2. If nobody's specifically asked yet and you're doing this proactively to open doors, I lean ISO 27001 for most Australian SMEs, simply because it's the more broadly recognised reference point outside the US and it plays well alongside standards like [ISO 9001](/iso-9001) if you're already running a quality system.
 
-What I actively discourage is picking a framework because it sounds more impressive or because a competitor has it. Both frameworks are real work — proper risk assessments, real policies, evidence that gets checked. Spend that effort on the framework your actual customers are asking for.
+What I actively discourage is picking a framework because it sounds more impressive or because a competitor has it. Both frameworks are real work - proper risk assessments, real policies, evidence that gets checked. Spend that effort on the framework your actual customers are asking for.
 
 ## Key Takeaways
 
-- ISO 27001 is a certificate from an accredited certification body; SOC 2 is an attestation report from a licensed CPA firm — they're structurally different, not just differently named.
+- ISO 27001 is a certificate from an accredited certification body; SOC 2 is an attestation report from a licensed CPA firm - they're structurally different, not just differently named.
 - ISO 27001 tends to be the stronger fit for Australian, UK, European and government-facing work; SOC 2 tends to be the stronger fit for US enterprise SaaS sales.
-- SOC 2 isn't automatically "easier" — Type II in particular demands months of consistent evidence, which can be harder than a one-off audit if your processes aren't already disciplined.
+- SOC 2 isn't automatically "easier" - Type II in particular demands months of consistent evidence, which can be harder than a one-off audit if your processes aren't already disciplined.
 - The two frameworks overlap enough that holding one meaningfully speeds up getting the other, but neither is optional homework once you've done the first.
 - The right starting point is almost always "what is our customer actually asking for," not "which one looks better on a website."
 
-If you're still not sure which framework fits your business, that's a completely normal place to be starting from — it's genuinely the most common conversation I have. An [internal audit](/internal-audits) programme is worth having either way, since both frameworks lean on it to prove your controls are still working between formal assessments. If you want a straight answer for your specific situation rather than a general one, [book a free call](/contact) and we'll work it out together.
+If you're still not sure which framework fits your business, that's a completely normal place to be starting from - it's genuinely the most common conversation I have. An [internal audit](/internal-audits) programme is worth having either way, since both frameworks lean on it to prove your controls are still working between formal assessments. If you want a straight answer for your specific situation rather than a general one, [book a free call](/contact) and we'll work it out together.

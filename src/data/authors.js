@@ -2,7 +2,7 @@ export const authors = {
   ranuka: {
     name: 'Ranuka',
     role: 'Founder, NextStep ISO',
-    photo: '/Linkedin profile pic.png',
+    photo: '/authors/ranuka-avatar.png',
     bio: [
       'Ranuka is the founder of NextStep ISO and has over 15 years of experience working across manufacturing, quality management and continuous improvement.',
       'His experience includes working within large manufacturing organisations across the aerospace, packaging and food manufacturing industries, giving him practical insight into how quality and management systems operate in real-world environments.',

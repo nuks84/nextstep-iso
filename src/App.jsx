@@ -15,6 +15,9 @@ import InternalAudits from './pages/InternalAudits'
 import Resources from './pages/Resources'
 import Insights from './pages/Insights'
 import InsightArticle from './pages/InsightArticle'
+import FirstCertification from './pages/for/FirstCertification'
+import ImprovingSystems from './pages/for/ImprovingSystems'
+import GrowingBusinesses from './pages/for/GrowingBusinesses'
 import Contact from './pages/Contact'
 import PrintChecklist from './pages/print/PrintChecklist'
 import PrintStandards from './pages/print/PrintStandards'
@@ -53,6 +56,9 @@ function SiteRoutes() {
         <Route path="/resources" element={<Resources />} />
         <Route path="/insights" element={<Insights />} />
         <Route path="/insights/:slug" element={<InsightArticle />} />
+        <Route path="/for/first-certification" element={<FirstCertification />} />
+        <Route path="/for/improving-systems" element={<ImprovingSystems />} />
+        <Route path="/for/growing-businesses" element={<GrowingBusinesses />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Layout>

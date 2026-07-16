@@ -13,8 +13,7 @@ export default function LatestInsights() {
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
         <SectionHeader
           headingId="latest-insights-heading"
-          tag="Insights"
-          title="Latest Insights"
+          title="Trending insights."
           subtitle="Practical guidance and straightforward advice to help Australian businesses understand ISO certification and build management systems that actually work."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
