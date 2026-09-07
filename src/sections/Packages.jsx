@@ -111,6 +111,7 @@ function PackageCard({ pkg, idx }) {
               <span className={`text-[2.4rem] font-extrabold tracking-[-0.02em] ${popular ? 'text-white' : 'text-gray-900'}`}>
                 ${price}
               </span>
+              <span className={`text-[0.9rem] font-medium ml-1.5 ${popular ? 'text-white/50' : 'text-gray-400'}`}>AUD</span>
             </>
           )}
         </div>
