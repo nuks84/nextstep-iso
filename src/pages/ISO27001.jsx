@@ -8,9 +8,9 @@ import { useReveal } from '../hooks/useReveal'
 const benefits = [
   { icon: Building2,   title: 'Win Enterprise Contracts', desc: 'Enterprise and government clients increasingly require ISO 27001 from their technology, professional services, and data-handling suppliers.' },
   { icon: AlertTriangle, title: 'Reduce Breach Risk',     desc: 'ISO 27001\'s risk management framework systematically identifies and addresses your information security vulnerabilities before they become incidents.' },
-  { icon: Globe,       title: 'Demonstrate Due Diligence', desc: 'In the event of a breach, ISO 27001 certification demonstrates you took reasonable security precautions — a critical defence in regulatory proceedings.' },
+  { icon: Globe,       title: 'Demonstrate Due Diligence', desc: 'In the event of a breach, ISO 27001 certification demonstrates you took reasonable security precautions - a critical defence in regulatory proceedings.' },
   { icon: Lock,        title: 'Build Client Trust',       desc: 'Clients share sensitive data with your business. An internationally recognised security certification gives them confidence that data is in safe hands.' },
-  { icon: FileKey,     title: 'Regulatory Alignment',     desc: 'ISO 27001 controls align closely with the Australian Privacy Act, the Essential Eight, and other regulatory frameworks — reducing compliance duplication.' },
+  { icon: FileKey,     title: 'Regulatory Alignment',     desc: 'ISO 27001 controls align closely with the Australian Privacy Act, the Essential Eight, and other regulatory frameworks - reducing compliance duplication.' },
   { icon: CheckCircle, title: 'Competitive Differentiator', desc: 'ISO 27001 remains uncommon among Australian SMEs. Achieving it places you ahead of competitors who cannot demonstrate equivalent security maturity.' },
 ]
 
@@ -69,10 +69,10 @@ export default function ISO27001() {
                 The global benchmark for information security
               </h2>
               <p className="text-[0.95rem] text-gray-600 leading-relaxed mb-4">
-                ISO/IEC 27001:2022 is the world's leading information security management standard. It provides a systematic approach to managing sensitive information — ensuring it stays secure through people, processes, and technology.
+                ISO/IEC 27001:2022 is the world's leading information security management standard. It provides a systematic approach to managing sensitive information - ensuring it stays secure through people, processes, and technology.
               </p>
               <p className="text-[0.95rem] text-gray-600 leading-relaxed mb-4">
-                ISO 27001 certification is increasingly required by enterprise and government procurement teams. It demonstrates that your business has implemented a structured, audited security program — not just best intentions.
+                ISO 27001 certification is increasingly required by enterprise and government procurement teams. It demonstrates that your business has implemented a structured, audited security program - not just best intentions.
               </p>
               <p className="text-[0.95rem] text-gray-600 leading-relaxed">
                 Our ISO 27001 service is right-sized for your organisation. Whether you're a 10-person technology company or a 200-person professional services firm, we build an ISMS that fits your context and passes your certification audit first time.
@@ -80,7 +80,7 @@ export default function ISO27001() {
             </div>
             <div className="bg-[#1a1a2e] rounded-3xl p-8 text-white">
               <p className="text-[0.72rem] font-semibold uppercase tracking-widest text-white/40 mb-5">
-                ISO 27001 — Key areas covered
+                ISO 27001 - Key areas covered
               </p>
               {[
                 'Information security risk assessment',
@@ -123,7 +123,7 @@ export default function ISO27001() {
             },
             {
               q: 'Do we need to be a large company to get ISO 27001?',
-              a: 'Not at all. We regularly certify businesses with 10–50 employees. ISO 27001 scales to your context — we build an ISMS that\'s proportionate to the risks you actually face, not a massive enterprise framework.',
+              a: 'Not at all. We regularly certify businesses with 10–50 employees. ISO 27001 scales to your context - we build an ISMS that\'s proportionate to the risks you actually face, not a massive enterprise framework.',
             },
             {
               q: "What's the difference between ISO 27001 and SOC 2?",

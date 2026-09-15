@@ -38,7 +38,7 @@ export default function GrowingBusinesses() {
         challenges={[
           "Growth is outpacing current processes and controls",
           "Losing tenders or enterprise deals due to a lack of certification",
-          "Multiple standards required — quality, safety, environmental, food safety — with no unified system",
+          "Multiple standards required - quality, safety, environmental, food safety - with no unified system",
           "Inconsistent processes across new sites, teams or locations",
         ]}
         howWeHelp={[

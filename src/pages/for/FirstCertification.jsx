@@ -36,7 +36,7 @@ export default function FirstCertification() {
 
       <PersonaContent
         challenges={[
-          "Not sure where to start or which standard applies — ISO 9001, 14001, 22000 or 45001",
+          "Not sure where to start or which standard applies - ISO 9001, 14001, 22000 or 45001",
           "Existing processes are undocumented or exist only in people's heads",
           "Concerned a generic, off-the-shelf template won't reflect how the business actually works",
           "Worried about the time, cost and disruption of a first certification",

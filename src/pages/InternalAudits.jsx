@@ -9,7 +9,7 @@ const services = [
   {
     icon: Search,
     title: 'Annual Internal Audit',
-    desc: 'A structured audit of your management system against the requirements of your ISO standard — conducted by an independent, qualified lead auditor.',
+    desc: 'A structured audit of your management system against the requirements of your ISO standard - conducted by an independent, qualified lead auditor.',
   },
   {
     icon: Users,
@@ -19,7 +19,7 @@ const services = [
   {
     icon: FileText,
     title: 'Document Control & Updates',
-    desc: 'Keeping your procedures, policies, and records current as your business changes — so your system reflects how you actually operate.',
+    desc: 'Keeping your procedures, policies, and records current as your business changes - so your system reflects how you actually operate.',
   },
   {
     icon: ClipboardCheck,
@@ -82,10 +82,10 @@ export default function InternalAudits() {
                 Most businesses pass their initial certification audit with flying colours. Then, 12 months later, they find themselves scrambling before a surveillance audit with outdated procedures, missing records, and a management review that never happened.
               </p>
               <p className="text-[0.95rem] text-gray-600 leading-relaxed mb-4">
-                Internal audits are a mandatory ISO requirement — and for good reason. They're the mechanism that keeps your management system alive and improving between external audits.
+                Internal audits are a mandatory ISO requirement - and for good reason. They're the mechanism that keeps your management system alive and improving between external audits.
               </p>
               <p className="text-[0.95rem] text-gray-600 leading-relaxed">
-                Our maintenance retainer handles everything: annual internal audit, management review, document updates, and surveillance prep — so your certification stays current without the stress.
+                Our maintenance retainer handles everything: annual internal audit, management review, document updates, and surveillance prep - so your certification stays current without the stress.
               </p>
             </div>
             <div ref={ref2} className="reveal reveal-delay-2">

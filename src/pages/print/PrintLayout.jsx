@@ -24,7 +24,7 @@ export function PrintLayout({ tag, title, subtitle, children }) {
 
       <footer className="mt-auto pt-4 border-t border-gray-200 flex items-center justify-between text-[0.75rem] text-gray-400">
         <span>© {new Date().getFullYear()} NextStep ISO Pty Ltd</span>
-        <span>Book a free consultation — nextstepiso.com.au/contact</span>
+        <span>Book a free consultation - nextstepiso.com.au/contact</span>
       </footer>
     </div>
   )

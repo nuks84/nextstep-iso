@@ -47,7 +47,7 @@ const services = [
     href: '/iso-22000',
     color: '#e11d48',
     badge: 'Retail & Export',
-    desc: 'ISO 22000 is increasingly required by major retailers, food manufacturers, and export markets — and forms the foundation for GFSI-recognised FSSC 22000 certification.',
+    desc: 'ISO 22000 is increasingly required by major retailers, food manufacturers, and export markets - and forms the foundation for GFSI-recognised FSSC 22000 certification.',
     includes: [
       'Food safety hazard analysis (HACCP-based)',
       'Prerequisite programs and operational controls',
@@ -111,7 +111,7 @@ const services = [
   {
     icon: Shield,
     title: 'Integrated Management System',
-    subtitle: 'IMS — Multiple Standards Combined',
+    subtitle: 'IMS - Multiple Standards Combined',
     href: '/services',
     color: '#6366f1',
     badge: 'Best Value',
@@ -184,7 +184,7 @@ export default function ServicesPage() {
         breadcrumb="Services"
         tag="Our Services"
         title="ISO certification from gap to certificate"
-        subtitle="Every engagement is fixed-price, fully managed, and backed by our first-audit pass guarantee. Choose the standard — we handle everything else."
+        subtitle="Every engagement is fixed-price, fully managed, and backed by our first-audit pass guarantee. Choose the standard - we handle everything else."
         cta={<Button to="/contact" arrow size="lg">Get a Free Quote</Button>}
       />
 

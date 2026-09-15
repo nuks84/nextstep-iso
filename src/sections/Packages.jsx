@@ -164,7 +164,7 @@ export default function Packages() {
           ))}
         </div>
         <p className="text-center text-[0.8rem] text-gray-400 mt-10">
-          All packages are fixed-price with no hidden fees. Final pricing depends on business size, scope, and standard — book a free call for an exact quote.
+          All packages are fixed-price with no hidden fees. Final pricing depends on business size, scope, and standard - book a free call for an exact quote.
         </p>
       </div>
     </section>

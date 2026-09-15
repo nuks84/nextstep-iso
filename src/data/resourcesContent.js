@@ -63,6 +63,6 @@ export const auditSteps = [
   { icon: MessageSquare, title: 'Opening Meeting', desc: 'The auditor confirms scope, timing, and people involved with the process owner before any evidence is reviewed.' },
   { icon: FileText, title: 'Evidence Gathering', desc: 'The auditor reviews records, observes work being done, and talks to staff to check the process matches what\'s documented.' },
   { icon: Check, title: 'Findings', desc: 'Any gaps are recorded as observations or nonconformances, each with a reference to the specific requirement not being met.' },
-  { icon: BadgeCheck, title: 'Closing Meeting', desc: 'Findings are presented back to the team on the day — no surprises later — along with an overall assessment.' },
+  { icon: BadgeCheck, title: 'Closing Meeting', desc: 'Findings are presented back to the team on the day - no surprises later - along with an overall assessment.' },
   { icon: RefreshCw, title: 'Corrective Action', desc: 'Process owners investigate the root cause of each finding and implement a fix, which is verified at the next audit.' },
 ]

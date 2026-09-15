@@ -21,7 +21,7 @@ const steps = [
     icon: FileText,
     number: '03',
     title: 'System Development',
-    desc: 'We build all required documentation, procedures, and policies — custom to your business. We then train your team to embed the system into daily operations.',
+    desc: 'We build all required documentation, procedures, and policies - custom to your business. We then train your team to embed the system into daily operations.',
     detail: '4–10 weeks · Fully managed',
   },
   {
@@ -80,7 +80,7 @@ export default function Process() {
       <div className="relative max-w-6xl mx-auto px-5 sm:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
 
-          {/* Left — header + context */}
+          {/* Left - header + context */}
           <div ref={sideRef} className="reveal">
             <h2 className="text-[2.8rem] sm:text-[3.5rem] font-extrabold tracking-[-0.03em] leading-[1.08] text-white mb-5">
               A structured path from kickoff to certified
@@ -90,7 +90,7 @@ export default function Process() {
             </p>
           </div>
 
-          {/* Right — steps */}
+          {/* Right - steps */}
           <div className="flex flex-col">
             {steps.map((step, i) => (
               <Step key={step.number} step={step} idx={i} />

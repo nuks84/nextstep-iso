@@ -9,10 +9,10 @@ import { useReveal } from '../hooks/useReveal'
 const benefits = [
   { icon: Globe,       title: 'Meet Environmental Obligations',  desc: 'ISO 14001 provides a structured framework for identifying, managing, and demonstrating compliance with environmental legislation and permit conditions.' },
   { icon: TrendingUp,  title: 'Win ESG-Scored Tenders',          desc: 'Government and enterprise procurement increasingly scores on sustainability credentials. ISO 14001 certification gives you a verifiable, recognised credential.' },
-  { icon: Leaf,        title: 'Reduce Waste & Operating Costs',  desc: 'The process of mapping your environmental impacts often reveals inefficiencies — reducing energy consumption, waste disposal costs, and resource use.' },
+  { icon: Leaf,        title: 'Reduce Waste & Operating Costs',  desc: 'The process of mapping your environmental impacts often reveals inefficiencies - reducing energy consumption, waste disposal costs, and resource use.' },
   { icon: Shield,      title: 'Manage Regulatory Risk',          desc: 'A documented environmental management system reduces the risk of regulatory non-compliance, fines, and reputational damage from environmental incidents.' },
-  { icon: FileCheck,   title: 'Stakeholder & Client Confidence', desc: 'Certification demonstrates to clients, investors, and the community that your environmental commitments are real — not just marketing language.' },
-  { icon: CheckCircle, title: 'Build a Sustainable Business',    desc: 'ISO 14001 builds continuous improvement into your environmental performance — so your business gets better every year, not just at audit time.' },
+  { icon: FileCheck,   title: 'Stakeholder & Client Confidence', desc: 'Certification demonstrates to clients, investors, and the community that your environmental commitments are real - not just marketing language.' },
+  { icon: CheckCircle, title: 'Build a Sustainable Business',    desc: 'ISO 14001 builds continuous improvement into your environmental performance - so your business gets better every year, not just at audit time.' },
 ]
 
 function BenefitCard({ b, delay }) {
@@ -48,10 +48,10 @@ export default function ISO14001() {
         breadcrumb="ISO 14001"
         tag="ISO 14001 Certification"
         title="Environmental management for the modern business"
-        subtitle="ISO 14001 helps Australian businesses demonstrate environmental responsibility, manage regulatory obligations, and win tenders that require credible sustainability credentials — without the complexity."
+        subtitle="ISO 14001 helps Australian businesses demonstrate environmental responsibility, manage regulatory obligations, and win tenders that require credible sustainability credentials - without the complexity."
         cta={
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Button to="/contact" arrow size="lg">Get Certified — Free Quote</Button>
+            <Button to="/contact" arrow size="lg">Get Certified - Free Quote</Button>
             <Button to="/services" variant="secondary" size="lg">View All Services</Button>
           </div>
         }
@@ -72,10 +72,10 @@ export default function ISO14001() {
                 ISO 14001:2015 is the internationally recognised framework for environmental management systems (EMS). It helps organisations systematically identify their environmental impacts, set objectives to reduce them, and demonstrate ongoing improvement.
               </p>
               <p className="text-[0.95rem] text-gray-600 leading-relaxed mb-4">
-                In Australia, ISO 14001 is required by many government contracts, infrastructure projects, and enterprise supply chains — particularly in construction, manufacturing, logistics, and mining.
+                In Australia, ISO 14001 is required by many government contracts, infrastructure projects, and enterprise supply chains - particularly in construction, manufacturing, logistics, and mining.
               </p>
               <p className="text-[0.95rem] text-gray-600 leading-relaxed">
-                At NextStep ISO, we build your environmental management system to be practical and proportionate — tailored to your actual environmental impacts, not a generic template that doesn't reflect how you operate.
+                At NextStep ISO, we build your environmental management system to be practical and proportionate - tailored to your actual environmental impacts, not a generic template that doesn't reflect how you operate.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -125,7 +125,7 @@ export default function ISO14001() {
             },
             {
               q: 'Do we need to already have environmental procedures in place?',
-              a: 'No — we can build your EMS from the ground up. If you already have procedures or environmental licences in place, we\'ll incorporate these and build around them, which can reduce the overall effort.',
+              a: 'No - we can build your EMS from the ground up. If you already have procedures or environmental licences in place, we\'ll incorporate these and build around them, which can reduce the overall effort.',
             },
             {
               q: 'Which industries commonly require ISO 14001?',

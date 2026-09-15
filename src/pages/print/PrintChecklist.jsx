@@ -6,7 +6,7 @@ export default function PrintChecklist() {
     <PrintLayout
       tag="Guide 01"
       title="ISO Certification Readiness Checklist"
-      subtitle="Run through this before you engage a consultant or certification body — it'll tell you roughly how far along you already are."
+      subtitle="Run through this before you engage a consultant or certification body - it'll tell you roughly how far along you already are."
     >
       <div className="grid grid-cols-2 gap-x-10 gap-y-5">
         {checklistGroups.map(group => (

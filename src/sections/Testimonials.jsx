@@ -9,7 +9,7 @@ const testimonials = [
     company: 'Kowalski Civil Pty Ltd',
     role: 'Managing Director',
     iso: 'ISO 9001',
-    quote: "We'd tried twice before with other consultants and failed the audit both times. Sarah came in, understood our business immediately, and we passed first go. The system she built is actually how we run the company now — not just a compliance document.",
+    quote: "We'd tried twice before with other consultants and failed the audit both times. Sarah came in, understood our business immediately, and we passed first go. The system she built is actually how we run the company now - not just a compliance document.",
     color: '#0d98cd',
   },
   {

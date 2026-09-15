@@ -14,7 +14,7 @@ export default function PrintStandards() {
             <div className="flex items-center gap-3 mb-2">
               <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ background: s.color }} />
               <h3 className="text-[1rem] font-bold text-[#0f0f0f]">{s.name}</h3>
-              <span className="text-[0.78rem] text-gray-400">— {s.focus}</span>
+              <span className="text-[0.78rem] text-gray-400">- {s.focus}</span>
             </div>
             <p className="text-[0.85rem] text-gray-600 leading-relaxed">{s.bestFor}</p>
           </div>

@@ -4,9 +4,9 @@ import { ChevronDown, Menu, X } from 'lucide-react'
 
 const serviceLinks = [
   { label: 'All Services', href: '/services' },
-  { label: 'ISO 9001 — Quality Management', href: '/iso-9001' },
-  { label: 'ISO 27001 — Information Security', href: '/iso-27001' },
-  { label: 'ISO 22000 — Food Safety', href: '/iso-22000' },
+  { label: 'ISO 9001 - Quality Management', href: '/iso-9001' },
+  { label: 'ISO 27001 - Information Security', href: '/iso-27001' },
+  { label: 'ISO 22000 - Food Safety', href: '/iso-22000' },
   { label: 'Internal Audits', href: '/internal-audits' },
 ]
 
@@ -57,7 +57,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-[68px]">
 
           {/* Logo */}
-          <Link to="/" className="flex items-center" aria-label="NextStep ISO — Home">
+          <Link to="/" className="flex items-center" aria-label="NextStep ISO - Home">
             <img
               src="/NextSteo ISO Logo removebg v2.png"
               alt="NextStep ISO"

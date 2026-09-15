@@ -17,9 +17,9 @@ const InstagramIcon = () => (
 )
 
 const services = [
-  { label: 'ISO 9001 — Quality', href: '/iso-9001' },
-  { label: 'ISO 27001 — Security', href: '/iso-27001' },
-  { label: 'ISO 22000 — Food Safety', href: '/iso-22000' },
+  { label: 'ISO 9001 - Quality', href: '/iso-9001' },
+  { label: 'ISO 27001 - Security', href: '/iso-27001' },
+  { label: 'ISO 22000 - Food Safety', href: '/iso-22000' },
   { label: 'Internal Audits', href: '/internal-audits' },
   { label: 'All Services', href: '/services' },
 ]
@@ -40,7 +40,7 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link to="/" className="inline-flex mb-4" aria-label="NextStep ISO — Home">
+            <Link to="/" className="inline-flex mb-4" aria-label="NextStep ISO - Home">
               <img
                 src="/NextSteo ISO Logo removebg v2.png"
                 alt="NextStep ISO"
@@ -48,7 +48,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-[0.875rem] text-gray-400 leading-relaxed mb-5">
-              Australia's trusted ISO consultancy. Expert-led certification — fast, affordable, and guaranteed.
+              Australia's trusted ISO consultancy. Expert-led certification - fast, affordable, and guaranteed.
             </p>
             <div className="flex gap-2.5">
               {[
@@ -114,7 +114,7 @@ export default function Footer() {
               {[
                 { Icon: Phone, text: '0494 718 985', href: 'tel:+61494718985' },
                 { Icon: Mail, text: 'hello@nextstepiso.com.au', href: 'mailto:hello@nextstepiso.com.au' },
-                { Icon: MapPin, text: 'Melbourne, VIC — Australia-wide', href: null },
+                { Icon: MapPin, text: 'Melbourne, VIC - Australia-wide', href: null },
               ].map(({ Icon, text, href }) => (
                 <li key={text} className="flex items-start gap-2.5">
                   <Icon className="w-4 h-4 text-[#0d98cd] mt-0.5 shrink-0" />

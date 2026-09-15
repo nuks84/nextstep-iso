@@ -1,4 +1,4 @@
-// Auto-discovers every .mdx file in this folder — drop a new file in here
+// Auto-discovers every .mdx file in this folder - drop a new file in here
 // (with a `meta` export) and it will appear on /insights automatically.
 // See README.md in this folder for the full authoring guide.
 

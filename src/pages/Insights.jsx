@@ -32,7 +32,7 @@ export default function Insights() {
   const collectionData = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'Insights — NextStep ISO',
+    name: 'Insights - NextStep ISO',
     description: 'Authoritative articles on ISO certification, management systems, auditing and HACCP for Australian small and medium-sized businesses.',
     url: `${SITE_URL}/insights`,
     publisher: { '@type': 'Organization', name: 'NextStep ISO', url: SITE_URL },
@@ -41,8 +41,8 @@ export default function Insights() {
   return (
     <>
       <Seo
-        title="Insights — ISO Certification & Compliance Guidance"
-        description="Practical, authoritative articles on ISO certification, management systems, internal auditing and HACCP — written for Australian SMEs and manufacturers."
+        title="Insights - ISO Certification & Compliance Guidance"
+        description="Practical, authoritative articles on ISO certification, management systems, internal auditing and HACCP - written for Australian SMEs and manufacturers."
         path="/insights"
         type="website"
       />

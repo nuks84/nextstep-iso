@@ -51,7 +51,7 @@ function StandardCard({ s, delay }) {
       <div className="flex items-center gap-3 mb-3">
         <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ background: s.color }} />
         <h3 className="text-[1rem] font-bold text-gray-900">{s.name}</h3>
-        <span className="text-[0.78rem] text-gray-400">— {s.focus}</span>
+        <span className="text-[0.78rem] text-gray-400">- {s.focus}</span>
       </div>
       <p className="text-[0.875rem] text-gray-500 leading-relaxed">{s.bestFor}</p>
     </div>
@@ -82,7 +82,7 @@ export default function Resources() {
         breadcrumb="Resources"
         tag="Free Resources"
         title="A few resources to get you started"
-        subtitle="Practical guides drawn from the certifications we deliver every day — no email signup required."
+        subtitle="Practical guides drawn from the certifications we deliver every day - no email signup required."
       />
 
       <section id="checklist" className="py-20 bg-white scroll-mt-20">
@@ -90,7 +90,7 @@ export default function Resources() {
           <SectionHeader
             tag="Guide 01"
             title="ISO Certification Readiness Checklist"
-            subtitle="Run through this before you engage a consultant or certification body — it'll tell you roughly how far along you already are."
+            subtitle="Run through this before you engage a consultant or certification body - it'll tell you roughly how far along you already are."
           />
           <DownloadLink slug="checklist" />
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-10 mt-8">

@@ -7,11 +7,11 @@ import Process from '../sections/Process'
 import { useReveal } from '../hooks/useReveal'
 
 const benefits = [
-  { icon: Layers,      title: 'One System, Multiple Standards',  desc: 'An IMS integrates ISO 9001, ISO 45001, and ISO 14001 into a single management system — sharing common processes, documentation, and controls across all three standards.' },
-  { icon: TrendingUp,  title: 'Reduce Duplication',             desc: 'Instead of three separate systems with overlapping requirements, an IMS consolidates them — less documentation to maintain, fewer procedures to train staff on.' },
+  { icon: Layers,      title: 'One System, Multiple Standards',  desc: 'An IMS integrates ISO 9001, ISO 45001, and ISO 14001 into a single management system - sharing common processes, documentation, and controls across all three standards.' },
+  { icon: TrendingUp,  title: 'Reduce Duplication',             desc: 'Instead of three separate systems with overlapping requirements, an IMS consolidates them - less documentation to maintain, fewer procedures to train staff on.' },
   { icon: FileCheck,   title: 'Single Audit Cycle',             desc: 'One integrated audit covers all three standards simultaneously, reducing the time, cost, and disruption of multiple separate certification audits each year.' },
   { icon: Shield,      title: 'Stronger Market Signal',         desc: 'Holding ISO 9001, ISO 45001, and ISO 14001 simultaneously sends a powerful message to clients and tender panels about your commitment to quality, safety, and sustainability.' },
-  { icon: Users,       title: 'Simpler for Your Team',          desc: 'Staff only need to understand one management system — not three. This improves adoption, reduces confusion, and makes training far more straightforward.' },
+  { icon: Users,       title: 'Simpler for Your Team',          desc: 'Staff only need to understand one management system - not three. This improves adoption, reduces confusion, and makes training far more straightforward.' },
   { icon: CheckCircle, title: 'Better Value',                   desc: 'An integrated engagement typically costs less than three separate certifications. You get all the commercial benefits of three certifications for a single, streamlined investment.' },
 ]
 
@@ -48,10 +48,10 @@ export default function IMS() {
         breadcrumb="Integrated Management Systems"
         tag="IMS Certification"
         title="One system. Multiple certifications."
-        subtitle="An Integrated Management System combines ISO 9001 (Quality), ISO 45001 (Safety), and ISO 14001 (Environment) into a single, unified framework — reducing duplication, simplifying audits, and delivering better value than three separate certifications."
+        subtitle="An Integrated Management System combines ISO 9001 (Quality), ISO 45001 (Safety), and ISO 14001 (Environment) into a single, unified framework - reducing duplication, simplifying audits, and delivering better value than three separate certifications."
         cta={
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Button to="/contact" arrow size="lg">Get Certified — Free Quote</Button>
+            <Button to="/contact" arrow size="lg">Get Certified - Free Quote</Button>
             <Button to="/services" variant="secondary" size="lg">View All Services</Button>
           </div>
         }
@@ -69,13 +69,13 @@ export default function IMS() {
                 Three standards. One streamlined system.
               </h2>
               <p className="text-[0.95rem] text-gray-600 leading-relaxed mb-4">
-                An Integrated Management System (IMS) brings together two or more ISO standards — typically ISO 9001, ISO 45001, and ISO 14001 — into a single coherent management framework. Rather than running parallel systems, your business manages quality, safety, and environmental performance under one set of integrated processes.
+                An Integrated Management System (IMS) brings together two or more ISO standards - typically ISO 9001, ISO 45001, and ISO 14001 - into a single coherent management framework. Rather than running parallel systems, your business manages quality, safety, and environmental performance under one set of integrated processes.
               </p>
               <p className="text-[0.95rem] text-gray-600 leading-relaxed mb-4">
-                The three standards share a common high-level structure (Annex SL), which means they integrate naturally. Requirements like leadership commitment, risk management, objectives, and continual improvement apply across all three — so there's no need to duplicate them.
+                The three standards share a common high-level structure (Annex SL), which means they integrate naturally. Requirements like leadership commitment, risk management, objectives, and continual improvement apply across all three - so there's no need to duplicate them.
               </p>
               <p className="text-[0.95rem] text-gray-600 leading-relaxed">
-                At NextStep ISO, we specialise in integrated implementations — building systems that meet all three standards without the overhead of maintaining them separately.
+                At NextStep ISO, we specialise in integrated implementations - building systems that meet all three standards without the overhead of maintaining them separately.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -121,15 +121,15 @@ export default function IMS() {
             },
             {
               q: 'Is an IMS cheaper than three separate certifications?',
-              a: 'Yes — an integrated engagement typically costs less than three independent implementations. Shared documentation, processes, and a single audit cycle reduce both our consulting effort and your certification body fees.',
+              a: 'Yes - an integrated engagement typically costs less than three independent implementations. Shared documentation, processes, and a single audit cycle reduce both our consulting effort and your certification body fees.',
             },
             {
               q: 'Can we add a new standard to an existing system?',
-              a: 'Absolutely. If you\'re already certified to one or two standards, we can extend your existing system to incorporate the additional standard — rather than building from scratch. We\'ll assess the gap and give you a realistic scope and cost.',
+              a: 'Absolutely. If you\'re already certified to one or two standards, we can extend your existing system to incorporate the additional standard - rather than building from scratch. We\'ll assess the gap and give you a realistic scope and cost.',
             },
             {
               q: 'Does the certification body audit all three at once?',
-              a: 'Yes. Most JASANZ-accredited certification bodies offer combined audits for IMS. This means a single audit team reviews all three standards together — saving time and significantly reducing the disruption to your business.',
+              a: 'Yes. Most JASANZ-accredited certification bodies offer combined audits for IMS. This means a single audit team reviews all three standards together - saving time and significantly reducing the disruption to your business.',
             },
           ].map(faq => <FAQItem key={faq.q} {...faq} />)}
         </div>

@@ -8,7 +8,7 @@ export default function Contact() {
         breadcrumb="Contact"
         tag="Contact Us"
         title="Start your ISO journey today"
-        subtitle="Answer a few quick questions and we'll put together a tailored certification roadmap for your business — no obligation, no jargon."
+        subtitle="Answer a few quick questions and we'll put together a tailored certification roadmap for your business - no obligation, no jargon."
         tightBottom
       />
 

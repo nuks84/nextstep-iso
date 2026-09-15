@@ -70,7 +70,7 @@ export default function App() {
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
-        {/* Chrome-less, print-optimised routes used to generate downloadable PDFs — see scripts/generate-pdfs.mjs */}
+        {/* Chrome-less, print-optimised routes used to generate downloadable PDFs - see scripts/generate-pdfs.mjs */}
         <Route path="/print/checklist" element={<PrintChecklist />} />
         <Route path="/print/choosing-a-standard" element={<PrintStandards />} />
         <Route path="/print/internal-audit" element={<PrintAudit />} />

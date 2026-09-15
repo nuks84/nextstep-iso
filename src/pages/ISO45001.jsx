@@ -10,9 +10,9 @@ const benefits = [
   { icon: Shield,       title: 'Meet OH&S Obligations',        desc: 'ISO 45001 aligns with Work Health and Safety legislation across all Australian states and territories, helping you demonstrate legal compliance and due diligence.' },
   { icon: AlertTriangle,title: 'Reduce Workplace Incidents',   desc: 'A systematic approach to hazard identification and risk control leads to fewer incidents, lower workers\' compensation costs, and a safer workplace.' },
   { icon: TrendingUp,   title: 'Win Government Contracts',     desc: 'ISO 45001 is a prerequisite for government panels, construction accreditation schemes, and major infrastructure contracts across Australia.' },
-  { icon: Users,        title: 'Demonstrate Duty of Care',     desc: 'Certification shows workers, clients, and regulators that you take safety seriously — protecting your people and your reputation.' },
+  { icon: Users,        title: 'Demonstrate Duty of Care',     desc: 'Certification shows workers, clients, and regulators that you take safety seriously - protecting your people and your reputation.' },
   { icon: FileCheck,    title: 'Reduce Liability Exposure',    desc: 'Documented safety systems and records provide a clear defence in the event of an incident, reducing your personal and organisational liability.' },
-  { icon: CheckCircle,  title: 'Build a Safety Culture',       desc: 'ISO 45001\'s framework involves workers at every level — creating shared ownership of safety rather than top-down compliance.' },
+  { icon: CheckCircle,  title: 'Build a Safety Culture',       desc: 'ISO 45001\'s framework involves workers at every level - creating shared ownership of safety rather than top-down compliance.' },
 ]
 
 function BenefitCard({ b, delay }) {
@@ -48,10 +48,10 @@ export default function ISO45001() {
         breadcrumb="ISO 45001"
         tag="ISO 45001 Certification"
         title="Australia's leading workplace health & safety standard"
-        subtitle="ISO 45001 provides an internationally recognised framework for managing workplace health and safety — reducing incidents, meeting legal obligations, and demonstrating your commitment to the wellbeing of every person in your business."
+        subtitle="ISO 45001 provides an internationally recognised framework for managing workplace health and safety - reducing incidents, meeting legal obligations, and demonstrating your commitment to the wellbeing of every person in your business."
         cta={
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Button to="/contact" arrow size="lg">Get Certified — Free Quote</Button>
+            <Button to="/contact" arrow size="lg">Get Certified - Free Quote</Button>
             <Button to="/services" variant="secondary" size="lg">View All Services</Button>
           </div>
         }
@@ -72,10 +72,10 @@ export default function ISO45001() {
                 ISO 45001:2018 replaced OHSAS 18001 as the international benchmark for occupational health and safety management systems. It provides a structured, risk-based approach to eliminating hazards and preventing work-related injury and illness.
               </p>
               <p className="text-[0.95rem] text-gray-600 leading-relaxed mb-4">
-                In Australia, ISO 45001 is increasingly required by government procurement, construction and infrastructure projects, and major supply chains. It complements — and helps demonstrate compliance with — the WHS Act and state-based legislation.
+                In Australia, ISO 45001 is increasingly required by government procurement, construction and infrastructure projects, and major supply chains. It complements - and helps demonstrate compliance with - the WHS Act and state-based legislation.
               </p>
               <p className="text-[0.95rem] text-gray-600 leading-relaxed">
-                At NextStep ISO, we build your OH&S management system around how your business actually operates — ensuring it's practical to maintain, not just compliant on paper.
+                At NextStep ISO, we build your OH&S management system around how your business actually operates - ensuring it's practical to maintain, not just compliant on paper.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -125,11 +125,11 @@ export default function ISO45001() {
             },
             {
               q: 'Do we already need an OH&S management system in place?',
-              a: 'No — we can build your OH&S management system from the ground up. If you already have safety procedures in place, we\'ll assess what exists and build on it, which can reduce time and cost.',
+              a: 'No - we can build your OH&S management system from the ground up. If you already have safety procedures in place, we\'ll assess what exists and build on it, which can reduce time and cost.',
             },
             {
               q: 'Does ISO 45001 replace compliance with WHS legislation?',
-              a: 'No. ISO 45001 complements legislative compliance — it provides a systematic framework for managing safety obligations, but you still need to meet all relevant WHS Act requirements. Certification does, however, strongly support demonstrated legal compliance.',
+              a: 'No. ISO 45001 complements legislative compliance - it provides a systematic framework for managing safety obligations, but you still need to meet all relevant WHS Act requirements. Certification does, however, strongly support demonstrated legal compliance.',
             },
           ].map(faq => <FAQItem key={faq.q} {...faq} />)}
         </div>

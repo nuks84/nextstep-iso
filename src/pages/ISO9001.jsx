@@ -84,7 +84,7 @@ import { useReveal } from '../hooks/useReveal'
 
 const benefits = [
   { icon: TrendingUp, title: 'Win More Tenders',       desc: 'ISO 9001 is a mandatory requirement for hundreds of government and enterprise procurement panels across Australia.' },
-  { icon: Shield,     title: 'Reduce Business Risk',   desc: 'A documented quality system reduces errors, rework, and complaints — saving money and protecting your reputation.' },
+  { icon: Shield,     title: 'Reduce Business Risk',   desc: 'A documented quality system reduces errors, rework, and complaints - saving money and protecting your reputation.' },
   { icon: Users,      title: 'Improve Team Alignment', desc: "Clear procedures and defined responsibilities mean less confusion, fewer mistakes, and a team that knows how to deliver consistently." },
   { icon: FileCheck,  title: 'Customer Confidence',    desc: "ISO 9001 certification signals to clients that you're serious about quality. It's one of the fastest ways to build trust with new accounts." },
   { icon: Clock,      title: 'Operational Efficiency', desc: 'Mapping your processes for ISO often reveals inefficiencies you didn\'t know existed. Most clients report measurable productivity gains.' },
@@ -124,10 +124,10 @@ export default function ISO9001() {
         breadcrumb="ISO 9001"
         tag="ISO 9001 Certification"
         title="Australia's most recognised quality standard"
-        subtitle="ISO 9001 is the internationally accepted benchmark for quality management. It demonstrates that your business delivers consistent, high-quality products and services — and it's increasingly required to win government and enterprise tenders."
+        subtitle="ISO 9001 is the internationally accepted benchmark for quality management. It demonstrates that your business delivers consistent, high-quality products and services - and it's increasingly required to win government and enterprise tenders."
         cta={
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Button to="/contact" arrow size="lg">Get Certified — Free Quote</Button>
+            <Button to="/contact" arrow size="lg">Get Certified - Free Quote</Button>
             <Button to="/services" variant="secondary" size="lg">View All Services</Button>
           </div>
         }
@@ -152,7 +152,7 @@ export default function ISO9001() {
                 In Australia, ISO 9001 is a requirement for government tender panels, construction accreditation schemes (QBCC, VBA, etc.), and supplier pre-qualification lists across nearly every major industry.
               </p>
               <p className="text-[0.95rem] text-gray-600 leading-relaxed">
-                At NextStep ISO, we build you a quality management system that's custom to your business — not a generic template — and we guarantee you'll pass your first certification audit.
+                At NextStep ISO, we build you a quality management system that's custom to your business - not a generic template - and we guarantee you'll pass your first certification audit.
               </p>
             </div>
             <RiskMatrix />
@@ -191,7 +191,7 @@ export default function ISO9001() {
             },
             {
               q: 'Do we need to hire a quality manager to maintain it?',
-              a: "No. We design your quality management system to be run by whoever you already have — whether that's you, an operations manager, or a part-time admin. We also offer ongoing maintenance retainers.",
+              a: "No. We design your quality management system to be run by whoever you already have - whether that's you, an operations manager, or a part-time admin. We also offer ongoing maintenance retainers.",
             },
             {
               q: 'Which certification body should we use?',

@@ -11,7 +11,7 @@ const accent = '#e11d48'
 const benefits = [
   { icon: Shield,      title: 'Meet Regulatory Requirements',   desc: 'ISO 22000 aligns with FSANZ food safety requirements, giving you a structured, auditable framework for demonstrating compliance.' },
   { icon: TrendingUp,  title: 'Win Retail & Export Contracts',  desc: 'Major supermarkets, food manufacturers, and export markets increasingly require certified food safety systems before accepting new suppliers.' },
-  { icon: ChefHat,     title: 'Reduce Contamination Risk',      desc: 'A systematic, HACCP-based approach identifies and controls food safety hazards at every stage — before they become incidents or recalls.' },
+  { icon: ChefHat,     title: 'Reduce Contamination Risk',      desc: 'A systematic, HACCP-based approach identifies and controls food safety hazards at every stage - before they become incidents or recalls.' },
   { icon: Users,       title: 'Build Consumer & Partner Trust', desc: 'Certification signals to customers, retailers, and partners that food safety is built into how you operate, not an afterthought.' },
   { icon: FileCheck,   title: 'A Pathway to FSSC 22000',        desc: 'ISO 22000 is the foundation of FSSC 22000, the GFSI-recognised scheme required by many major retailers. We can extend your system when you\'re ready.' },
   { icon: CheckCircle, title: 'Continuous Improvement',         desc: 'Like all ISO management systems, ISO 22000 builds in a formal mechanism for reviewing and improving your food safety performance every year.' },
@@ -53,7 +53,7 @@ export default function ISO22000() {
         subtitle="ISO 22000 is the internationally recognised standard for food safety management systems. It's rapidly becoming a requirement for suppliers to major retailers, food manufacturers, and export markets across Australia."
         cta={
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Button to="/contact" arrow size="lg">Get Certified — Free Quote</Button>
+            <Button to="/contact" arrow size="lg">Get Certified - Free Quote</Button>
             <Button to="/services" variant="secondary" size="lg">View All Services</Button>
           </div>
         }
@@ -74,10 +74,10 @@ export default function ISO22000() {
                 ISO 22000:2018 combines HACCP principles with a full management system approach, providing a structured framework for identifying, controlling, and continually reducing food safety hazards across your operations.
               </p>
               <p className="text-[0.95rem] text-gray-600 leading-relaxed mb-4">
-                In Australia, ISO 22000 is increasingly required by major retailers, food manufacturers, food service businesses, and export markets — and forms the foundation of FSSC 22000, a GFSI-recognised scheme required by many supermarket chains.
+                In Australia, ISO 22000 is increasingly required by major retailers, food manufacturers, food service businesses, and export markets - and forms the foundation of FSSC 22000, a GFSI-recognised scheme required by many supermarket chains.
               </p>
               <p className="text-[0.95rem] text-gray-600 leading-relaxed">
-                At NextStep ISO, we build your food safety management system around how your business actually operates — not a generic template — and guarantee you'll pass your first certification audit.
+                At NextStep ISO, we build your food safety management system around how your business actually operates - not a generic template - and guarantee you'll pass your first certification audit.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -128,7 +128,7 @@ export default function ISO22000() {
             },
             {
               q: "What's the difference between ISO 22000 and HACCP?",
-              a: 'HACCP is a set of food safety principles focused on hazard analysis and critical control points. ISO 22000 incorporates HACCP but wraps it in a full management system — including leadership commitment, documented objectives, and continual improvement — making it a broader, internationally certifiable standard.',
+              a: 'HACCP is a set of food safety principles focused on hazard analysis and critical control points. ISO 22000 incorporates HACCP but wraps it in a full management system - including leadership commitment, documented objectives, and continual improvement - making it a broader, internationally certifiable standard.',
             },
             {
               q: "What's the difference between ISO 22000 and FSSC 22000?",

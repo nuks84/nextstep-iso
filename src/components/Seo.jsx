@@ -34,7 +34,7 @@ function upsertLink(rel, href) {
 
 /**
  * Manages per-page title, meta description, canonical URL and social
- * sharing tags directly on document.head — this is a CSR SPA with no
+ * sharing tags directly on document.head - this is a CSR SPA with no
  * SSR, so there's no react-helmet-style head manager already in the
  * stack. Restores the previous (index.html default) values on unmount
  * so navigating to a page without <Seo> doesn't leak stale tags.

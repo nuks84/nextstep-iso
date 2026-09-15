@@ -58,11 +58,11 @@ export default function Hero() {
           </span>
         </h1>
 
-        <p className="text-[0.8rem] sm:text-[0.9rem] font-semibold tracking-[0.3em] uppercase text-[#0f0f0f]/30 mb-8">
+        <p className="text-[0.9rem] sm:text-[1rem] font-semibold tracking-[0.3em] uppercase text-[#0f0f0f]/30 mb-8">
           ISO &nbsp;&nbsp; GMP &nbsp;&nbsp; HACCP
         </p>
 
-        <p className="text-[1.05rem] text-[#0f0f0f]/55 leading-relaxed mb-10">
+        <p className="text-[1.15rem] text-[#0f0f0f]/55 leading-relaxed mb-10">
           Certification without the complexity, confusion, or burden on your team.
         </p>
 
