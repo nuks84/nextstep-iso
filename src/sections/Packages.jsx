@@ -9,11 +9,13 @@ const packages = [
     icon: Rocket,
     pitch: 'Get Certified',
     audience: 'For businesses pursuing their first ISO certification',
-    price: '3,500',
+    price: [
+      { label: 'ISO 9001', amount: '6,000' },
+      { label: 'ISO 22000 / ISO 27001', amount: '9,000' },
+    ],
     custom: false,
-    desc: 'Everything you need to achieve certification against a single ISO standard, delivered through our proven fixed-price implementation approach.',
+    desc: 'Everything you need to achieve certification against a single ISO standard, delivered at a fixed price.',
     features: [
-      'ISO 9001 or ISO 22000 implementation',
       'Gap analysis and implementation roadmap',
       'Process mapping and documentation guidance',
       'Internal audit',
@@ -28,7 +30,7 @@ const packages = [
     icon: TrendingUp,
     pitch: 'Build Better Systems',
     audience: 'For growing businesses with multiple standards or more complex operations',
-    price: '7,500',
+    price: '9,000',
     custom: false,
     desc: 'Build an integrated management system that grows with your business while reducing duplicated processes.',
     features: [
@@ -93,28 +95,12 @@ function PackageCard({ pkg, idx }) {
         <p className={`text-[0.73rem] font-semibold uppercase tracking-[0.1em] mb-2 ${popular ? 'text-[#0d98cd]' : 'text-[#0d98cd]'}`}>
           {pitch}
         </p>
-        <h3 className={`text-[1.15rem] font-bold mb-1 ${popular ? 'text-white' : 'text-gray-900'}`}>
+        <h3 className={`text-[1.6rem] font-bold mb-1 ${popular ? 'text-white' : 'text-gray-900'}`}>
           {name}
         </h3>
         <p className={`text-[0.85rem] leading-snug mb-6 ${popular ? 'text-white/45' : 'text-gray-400'}`}>
           {audience}
         </p>
-
-        <div className="mb-6">
-          {custom ? (
-            <span className={`text-[2.4rem] font-extrabold tracking-[-0.02em] ${popular ? 'text-white' : 'text-gray-900'}`}>
-              Custom Pricing
-            </span>
-          ) : (
-            <>
-              <span className={`text-[0.9rem] font-medium ${popular ? 'text-white/50' : 'text-gray-400'}`}>From </span>
-              <span className={`text-[2.4rem] font-extrabold tracking-[-0.02em] ${popular ? 'text-white' : 'text-gray-900'}`}>
-                ${price}
-              </span>
-              <span className={`text-[0.9rem] font-medium ml-1.5 ${popular ? 'text-white/50' : 'text-gray-400'}`}>AUD</span>
-            </>
-          )}
-        </div>
 
         <p className={`text-[0.875rem] leading-relaxed mb-6 ${popular ? 'text-white/50' : 'text-gray-500'}`}>
           {desc}
@@ -134,9 +120,32 @@ function PackageCard({ pkg, idx }) {
           ))}
         </ul>
 
+        <div className="mt-auto mb-6 flex flex-col gap-4">
+          {custom ? (
+            <span className={`text-[2.4rem] font-extrabold tracking-[-0.02em] ${popular ? 'text-white' : 'text-gray-900'}`}>
+              Custom Pricing
+            </span>
+          ) : (
+            (Array.isArray(price) ? price : [{ amount: price }]).map(({ label, amount }) => (
+              <div key={label ?? amount}>
+                {label && (
+                  <p className={`text-[0.72rem] font-semibold uppercase tracking-widest mb-1 ${popular ? 'text-white/30' : 'text-gray-400'}`}>
+                    {label}
+                  </p>
+                )}
+                <span className={`text-[0.9rem] font-medium ${popular ? 'text-white/50' : 'text-gray-400'}`}>From </span>
+                <span className={`text-[2.4rem] font-extrabold tracking-[-0.02em] ${popular ? 'text-white' : 'text-gray-900'}`}>
+                  ${amount}
+                </span>
+                <span className={`text-[0.9rem] font-medium ml-1.5 ${popular ? 'text-white/50' : 'text-gray-400'}`}>AUD</span>
+              </div>
+            ))
+          )}
+        </div>
+
         <Link
           to="/contact"
-          className={`mt-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-semibold text-[0.9rem] transition-all hover:-translate-y-px ${
+          className={`inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-semibold text-[0.9rem] transition-all hover:-translate-y-px ${
             popular
               ? 'bg-[#0d98cd] text-white hover:bg-[#0a7aaa] shadow-lg shadow-[#0d98cd]/20'
               : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
